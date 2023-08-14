@@ -15,7 +15,6 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "michielkempen/laravel-http-client": "^4.5",
-    "spatie/temporary-directory": "^2.1"
+    "michielkempen/laravel-http-client": "^4.5"
   }
 }

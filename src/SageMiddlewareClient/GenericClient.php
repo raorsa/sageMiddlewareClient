@@ -2,10 +2,8 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Support\Facades\Http;
-use Spatie\TemporaryDirectory\TemporaryDirectory;
 
 class GenericClient
 {
@@ -30,27 +28,12 @@ class GenericClient
 
     private function saveCache(string $path, string $body)
     {
-        $directory = (new TemporaryDirectory())
-            ->name(md5($path))
-            ->create();
 
-        $file = $directory->path(time() + $this->cache_life);
-        file_put_contents($file, $body);
     }
 
     private function getCache(string $path, bool $catchExpired = false): string|bool
     {
-        $directory = (new TemporaryDirectory())
-            ->name(md5($path))
-            ->create();
-        $files = scandir($directory);
-        sort($files);
-        $file = array_shift($files);
-        if ($file > time() || $catchExpired) {
-            return file_get_contents($directory->path($file));
-        } else {
-            return false;
-        }
+
     }
 
     protected function call(string $method, bool $cache = true): PromiseInterface|bool
