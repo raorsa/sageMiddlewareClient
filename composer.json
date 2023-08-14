@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "autoload": {
     "psr-4": {
-      "Raorsa\\SageMiddlewareClient\\": "src/"
+      "Raorsa\\SageMiddlewareClient\\": "src/SageMiddlewareClient"
     }
   },
   "authors": [

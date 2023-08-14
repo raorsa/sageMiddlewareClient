@@ -1,8 +1,8 @@
 <?php
 
-namespace Raorsa;
+namespace Raorsa\SageMiddlewareClient;
 
-class Clients extends SageMiddlewareClient
+class Clients extends GenericClient
 {
     const BASE = 'clients';
 

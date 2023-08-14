@@ -1,8 +1,8 @@
 <?php
 
-namespace Raorsa;
+namespace Raorsa\SageMiddlewareClient;
 
-class Invoices extends SageMiddlewareClient
+class Invoices extends GenericClient
 {
     const BASE = 'invoice';
 

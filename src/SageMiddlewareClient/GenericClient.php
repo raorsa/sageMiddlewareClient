@@ -1,13 +1,13 @@
 <?php
 
-namespace Raorsa;
+namespace Raorsa\SageMiddlewareClient;
 
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Support\Facades\Http;
 use Spatie\TemporaryDirectory\TemporaryDirectory;
 
-class SageMiddlewareClient
+class GenericClient
 {
     const URL_LOGIN = 'login';
 
