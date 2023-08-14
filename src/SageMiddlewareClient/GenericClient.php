@@ -2,7 +2,6 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Support\Facades\Http;
 use rapidweb\RWFileCache\RWFileCache;
 
