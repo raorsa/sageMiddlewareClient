@@ -35,7 +35,7 @@ class GenericClient
 
         $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
 
-        $cache->set(md5($path), $body, strtotime('+ ' . $this->cacheLife . ' minutes'));
+        $cache->set(md5($path), $body, strtotime('+ ' . $this->cache_life . ' minutes'));
     }
 
     private function getCache(string $path, bool $catchExpired = false): string|bool
@@ -47,7 +47,7 @@ class GenericClient
         return $cache->get(md5($path));
     }
 
-    protected function call(string $method, bool $cache = true): PromiseInterface|bool
+    protected function call(string $method, bool $cache = true): string|bool
     {
         $path = $this->url . $method;
 
@@ -69,12 +69,11 @@ class GenericClient
                 $return = false;
             }
         }
-
         return $return;
     }
 
     protected function callJson(string $method, bool $cache = true)
     {
-        return $this->call($method, $cache)->json();
+        return json_decode($this->call($method, $cache));
     }
 }
