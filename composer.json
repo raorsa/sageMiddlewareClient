@@ -1,20 +1,21 @@
 {
-    "name": "raorsa/sage-middleware-client",
-    "type": "library",
-    "license": "property",
-    "autoload": {
-        "psr-4": {
-            "Raorsa\\SageMiddlewareClient\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "vampirejsv",
-            "email": "jvcanet@raorsa.es"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "guzzlehttp/guzzle": "7.7.x-dev"
+  "name": "raorsa/sage-middleware-client",
+  "type": "library",
+  "license": "property",
+  "autoload": {
+    "psr-4": {
+      "Raorsa\\SageMiddlewareClient\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "vampirejsv",
+      "email": "jvcanet@raorsa.es"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "michielkempen/laravel-http-client": "^4.5",
+    "spatie/temporary-directory": "^2.1"
+  }
 }
