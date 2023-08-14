@@ -1,0 +1,20 @@
+{
+    "name": "raorsa/sage-middleware-client",
+    "type": "library",
+    "license": "property",
+    "autoload": {
+        "psr-4": {
+            "Raorsa\\SageMiddlewareClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vampirejsv",
+            "email": "jvcanet@raorsa.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "7.7.x-dev"
+    }
+}
