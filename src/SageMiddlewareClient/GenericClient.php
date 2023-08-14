@@ -4,6 +4,7 @@ namespace Raorsa\SageMiddlewareClient;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Support\Facades\Http;
+use rapidweb\RWFileCache\RWFileCache;
 
 class GenericClient
 {
@@ -12,11 +13,13 @@ class GenericClient
     private $url;
     private $login;
     private $cache_life;
+    private $cache_dir;
 
-    public function __construct(string $url, string $email, string $password, string $name, int $cacheLife = 10)
+    public function __construct(string $url, string $email, string $password, string $name, int $cacheLife = 10, string $cache_dir = "/tmp/sageCache/")
     {
         $this->url = str_replace('//', '/', $url . '/');
-        $this->cache_life = $cacheLife * 60; // in minutes
+        $this->cache_life = $cacheLife; // in minutes
+        $this->cache_dir = $cache_dir;
 
         $this->login = Http::post($this->url . self::URL_LOGIN, [
             'email' => $email,
@@ -28,12 +31,20 @@ class GenericClient
 
     private function saveCache(string $path, string $body)
     {
+        $cache = new RWFileCache();
 
+        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
+
+        $cache->set(md5($path), $body, strtotime('+ ' . $this->cacheLife . ' minutes'));
     }
 
     private function getCache(string $path, bool $catchExpired = false): string|bool
     {
+        $cache = new RWFileCache();
 
+        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
+
+        return $cache->get(md5($path));
     }
 
     protected function call(string $method, bool $cache = true): PromiseInterface|bool
