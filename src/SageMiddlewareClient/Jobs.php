@@ -15,4 +15,9 @@ class Jobs extends GenericClient
     {
         return $this->callJson(self::BASE . '/operations');
     }
+
+    public function operationsJobs()
+    {
+        return $this->callJson(self::BASE . '/operations-jobs');
+    }
 }
