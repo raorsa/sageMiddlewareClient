@@ -14,8 +14,11 @@ class GenericClient
     private $cache_life;
     private $cache_dir;
 
-    public function __construct(string $url, string $email, string $password, string $name, int $cacheLife = 10, string $cache_dir = "/tmp/sageCache/")
+    public function __construct(string $url, string $email, string $password, string $name, int $cacheLife = 10, string $cache_dir = null)
     {
+        if (is_null($cache_dir)) {
+            $cache_dir = "/tmp/sageCache." . md5($_SERVER["SERVER_NAME"]) . "/";
+        }
         $this->url = str_replace('//', '/', $url . '/');
         $this->cache_life = $cacheLife; // in minutes
         $this->cache_dir = $cache_dir;
