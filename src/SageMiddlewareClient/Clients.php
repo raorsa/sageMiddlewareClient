@@ -15,4 +15,9 @@ class Clients extends GenericClient
     {
         return $this->callJson(self::BASE . '/auth-domains');
     }
+
+    public function clients()
+    {
+        return $this->callJson(self::BASE . '/clients');
+    }
 }
