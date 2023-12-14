@@ -11,6 +11,11 @@ class Clients extends GenericClient
         return $this->callJson(self::BASE . '/team-info/' . $domain);
     }
 
+    public function clientInfo(string $id)
+    {
+        return $this->callJson(self::BASE . '/client-info/' . $id);
+    }
+
     public function validDomains()
     {
         return $this->callJson(self::BASE . '/auth-domains');
