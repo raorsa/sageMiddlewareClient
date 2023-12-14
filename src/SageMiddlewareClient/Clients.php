@@ -8,12 +8,12 @@ class Clients extends GenericClient
 
     public function companyInfo(string $domain)
     {
-        return $this->callJson(self::BASE . '/team-info/' . $domain);
+        return $this->callJson(self::BASE . '/team/' . $domain);
     }
 
     public function clientInfo(string $id)
     {
-        return $this->callJson(self::BASE . '/client-info/' . $id);
+        return $this->callJson(self::BASE . '/info/' . $id);
     }
 
     public function validDomains()
@@ -23,6 +23,6 @@ class Clients extends GenericClient
 
     public function clients()
     {
-        return $this->callJson(self::BASE . '/clients');
+        return $this->callJson(self::BASE . '/list');
     }
 }
