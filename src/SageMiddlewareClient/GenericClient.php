@@ -14,7 +14,7 @@ class GenericClient
     private $cache_life;
     private $cache_dir;
 
-    public function __construct(string $url, string $email, string $password, string $name, int $cacheLife = 10, string $cache_dir = null)
+    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null)
     {
         if (is_null($cache_dir)) {
             $cache_dir = "/tmp/sageCache." . md5(getcwd()) . "/";
@@ -23,11 +23,15 @@ class GenericClient
         $this->cache_life = $cacheLife; // in minutes
         $this->cache_dir = $cache_dir;
 
-        $this->login = Http::post($this->url . self::URL_LOGIN, [
+        $options = [
             'email' => $email,
-            'password' => $password,
-            'name' => $name
-        ])->json('token');
+            'password' => $password
+        ];
+        if (!is_null($name)) {
+            $options['name'] = $name;
+        }
+
+        $this->login = Http::post($this->url . self::URL_LOGIN, $options)->json('token');
 
     }
 
