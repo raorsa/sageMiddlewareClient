@@ -31,7 +31,7 @@ class GenericClient
             $options['name'] = $name;
         }
 
-        if ($_ENV['APP_DEBUG']) {
+        if (isset($_ENV['APP_DEBUG'])&&$_ENV['APP_DEBUG']) {
             $this->login = Http::withoutVerifying()->post($this->url . self::URL_LOGIN, $options)->json('token');
         } else {
             $this->login = Http::post($this->url . self::URL_LOGIN, $options)->json('token');
@@ -65,7 +65,7 @@ class GenericClient
             return $response;
         }
 
-        if ($_ENV['APP_DEBUG']) {
+        if (isset($_ENV['APP_DEBUG'])&&$_ENV['APP_DEBUG']) {
             $response = Http::withoutVerifying()->withToken($this->login)->get($path);
         } else {
             $response = Http::withToken($this->login)->get($path);
