@@ -25,4 +25,9 @@ class Jobs extends GenericClient
     {
         return $this->callJson(self::BASE . '/job/' . $id);
     }
+
+    public function getSN(string $id)
+    {
+        return $this->callJson(self::BASE . '/jobsn/' . $id);
+    }
 }
