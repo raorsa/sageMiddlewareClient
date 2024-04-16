@@ -20,6 +20,12 @@ class Apparatus extends GenericClient
     {
         return $this->callJson(self::BASE . '/' . $id . '/integrated');
     }
+
+    public function brandInfo(string $id)
+    {
+        return $this->callJson(self::BASE . '/brand/' . $id);
+    }
+
     public function brands()
     {
         return $this->callJson(self::BASE . '/brands');
