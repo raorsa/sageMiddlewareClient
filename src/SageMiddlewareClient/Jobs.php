@@ -30,4 +30,9 @@ class Jobs extends GenericClient
     {
         return $this->callJson(self::BASE . '/jobsn/' . $id);
     }
+
+    public function importLog(string $date)
+    {
+        return $this->callJson(self::BASE . '/import/' . $date);
+    }
 }
