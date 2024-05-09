@@ -6,33 +6,33 @@ class Jobs extends GenericClient
 {
     const BASE = 'jobs';
 
-    public function list()
+    public function list(bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/list');
+        return $this->callJson(self::BASE . '/list', $cache);
     }
 
-    public function operations()
+    public function operations(bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/operations');
+        return $this->callJson(self::BASE . '/operations', $cache);
     }
 
-    public function operationsJobs()
+    public function operationsJobs(bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/operations-jobs');
+        return $this->callJson(self::BASE . '/operations-jobs', $cache);
     }
 
-    public function info(string $id)
+    public function info(string $id, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/job/' . $id);
+        return $this->callJson(self::BASE . '/job/' . $id, $cache);
     }
 
-    public function getSN(string $id)
+    public function getSN(string $id, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/jobsn/' . $id);
+        return $this->callJson(self::BASE . '/jobsn/' . $id, $cache);
     }
 
-    public function importLog(string $date)
+    public function importLog(string $date, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/import/' . $date);
+        return $this->callJson(self::BASE . '/import/' . $date, $cache);
     }
 }
