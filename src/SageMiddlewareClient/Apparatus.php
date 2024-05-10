@@ -6,33 +6,43 @@ class Apparatus extends GenericClient
 {
     const BASE = 'apparatus';
 
-    public function list(string $client)
+    public function list(string $client, bool $cache = true)
     {
         return $this->callJson(self::BASE . '/' . $client);
     }
 
-    public function interventions(string $id)
+    public function interventions(string $id, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/' . $id . '/interventions');
+        return $this->callJson(self::BASE . '/' . $id . '/interventions', $cache);
     }
 
-    public function brands()
+    public function integrated(string $id, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/brands');
+        return $this->callJson(self::BASE . '/' . $id . '/integrated', $cache);
     }
 
-    public function types()
+    public function brandInfo(string $id, bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/types');
+        return $this->callJson(self::BASE . '/brand/' . $id, $cache);
     }
 
-    public function warranties()
+    public function brands(bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/warranties');
+        return $this->callJson(self::BASE . '/brands', $cache);
     }
 
-    public function interventionsType()
+    public function types(bool $cache = true)
     {
-        return $this->callJson(self::BASE . '/interventions-type');
+        return $this->callJson(self::BASE . '/types', $cache);
+    }
+
+    public function warranties(bool $cache = true)
+    {
+        return $this->callJson(self::BASE . '/warranties', $cache);
+    }
+
+    public function interventionsType(bool $cache = true)
+    {
+        return $this->callJson(self::BASE . '/interventions-type', $cache);
     }
 }

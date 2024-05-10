@@ -2,9 +2,9 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class Invoices extends GenericClient
+class DeliveryNotes extends GenericClient
 {
-    const BASE = 'invoice';
+    const BASE = 'delivery';
 
     public function list(string $team, bool $cache = true)
     {
