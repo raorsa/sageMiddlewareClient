@@ -3,6 +3,9 @@
 namespace Raorsa\SageMiddlewareClient;
 
 use Illuminate\Support\Facades\Http;
+use Monolog\Level;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 use rapidweb\RWFileCache\RWFileCache;
 
 class GenericClient
@@ -13,15 +16,20 @@ class GenericClient
     private $login;
     private $cache_life;
     private $cache_dir;
+    private $log_dir;
 
-    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null)
+    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null)
     {
         if (is_null($cache_dir)) {
             $cache_dir = "/tmp/sageCache." . md5(getcwd()) . "/";
         }
+        if (is_null($log_dir)) {
+            $log_dir = (function_exists('storage_path') ? storage_path() . '/' : "") . "logs/";
+        }
         $this->url = str_replace('//', '/', $url . '/');
         $this->cache_life = $cacheLife; // in minutes
         $this->cache_dir = $cache_dir;
+        $this->log_dir = $log_dir;
 
         $options = [
             'email' => $email,
@@ -31,7 +39,7 @@ class GenericClient
             $options['name'] = $name;
         }
 
-        if (isset($_ENV['APP_DEBUG'])&&$_ENV['APP_DEBUG']) {
+        if (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']) {
             $this->login = Http::withoutVerifying()->post($this->url . self::URL_LOGIN, $options)->json('token');
         } else {
             $this->login = Http::post($this->url . self::URL_LOGIN, $options)->json('token');
@@ -65,7 +73,7 @@ class GenericClient
             return $response;
         }
 
-        if (isset($_ENV['APP_DEBUG'])&&$_ENV['APP_DEBUG']) {
+        if (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']) {
             $response = Http::withoutVerifying()->withToken($this->login)->get($path);
         } else {
             $response = Http::withToken($this->login)->get($path);
@@ -82,6 +90,12 @@ class GenericClient
             } else {
                 $return = false;
             }
+        }
+        if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
+            $log = new Logger('Sageclient');
+            $log->pushHandler(new StreamHandler($this->log_dir, Level::fromName($_ENV['LOG_LEVEL'])));
+
+            $log->info($return);
         }
         return $return;
     }
