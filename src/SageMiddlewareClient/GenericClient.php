@@ -47,6 +47,19 @@ class GenericClient
 
     }
 
+    /**
+     * @param false|string $return
+     * @return void
+     */
+    public function log($return): void
+    {
+        if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
+            $log = new Logger('Sageclient');
+            $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
+            $log->info($return);
+        }
+    }
+
     private function saveCache(string $path, string $body)
     {
         $cache = new RWFileCache();
@@ -70,6 +83,7 @@ class GenericClient
         $path = $this->url . $method;
 
         if ($response = $this->getCache($path)) {
+            $this->log($path . '||cache->' . $response);
             return $response;
         }
 
@@ -80,23 +94,14 @@ class GenericClient
         }
 
         if ($response->successful()) {
-            if ($cache) {
+            $return = $response->body();
+            if ($cache && $return != '[]') {
                 $this->saveCache($path, $response->body());
             }
-            $return = $response->body();
         } else {
-            if ($cache) {
-                $return = $this->getCache($path, true);
-            } else {
-                $return = false;
-            }
+            $return = false;
         }
-        if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
-            $log = new Logger('Sageclient');
-            $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
-
-            $log->info($return);
-        }
+        $this->log($path . '->' . $return);
         return $return;
     }
 
