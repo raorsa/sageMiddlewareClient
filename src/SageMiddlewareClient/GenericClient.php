@@ -91,7 +91,8 @@ class GenericClient
     {
         $path = $this->url . $method;
         $response = $this->getCache($path);
-        $this->log('CACHE RESULT ' . $path . '||' . $this->getCacheInfo($path) . '->' . $response);
+        $object = $this->getCacheInfo($path);
+        $this->log('CACHE RESULT ' . $path . '||' . date("Y-m-d H:i:s", $object->expiryTimestamp) . '->' . $response);
         if ($response != false) {
             $this->log($path . '||cache->' . $response);
             return $response;
