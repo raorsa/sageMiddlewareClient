@@ -93,7 +93,7 @@ class GenericClient
         }
         if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
             $log = new Logger('Sageclient');
-            $log->pushHandler(new StreamHandler($this->log_dir, Level::fromName($_ENV['LOG_LEVEL'])));
+            $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
 
             $log->info($return);
         }
