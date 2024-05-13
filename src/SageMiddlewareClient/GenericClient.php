@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 use Monolog\Level;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
-use rapidweb\RWFileCache\RWFileCache;
+use Raorsa\RWFileCache\RWFileCache;
 
 class GenericClient
 {
@@ -66,7 +66,7 @@ class GenericClient
 
         $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
 
-        $cache->set(md5($path), $body, strtotime('+ ' . $this->cache_life . ' minutes'));
+        $cache->set(md5($path), $body, $this->cache_life * 60);
     }
 
     private function getCache(string $path, bool $catchExpired = false): string|bool
@@ -78,11 +78,21 @@ class GenericClient
         return $cache->get(md5($path));
     }
 
+    private function getCacheInfo(string $path, bool $catchExpired = false): string|bool
+    {
+        $cache = new RWFileCache();
+
+        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
+
+        return $cache->getObject(md5($path));
+    }
+
     protected function call(string $method, bool $cache = true): string|bool
     {
         $path = $this->url . $method;
-
-        if ($response = $this->getCache($path)) {
+        $response = $this->getCache($path);
+        $this->log('CACHE RESULT ' . $path . '||' . $this->getCacheInfo($path) . '->' . $response);
+        if ($response != false) {
             $this->log($path . '||cache->' . $response);
             return $response;
         }
