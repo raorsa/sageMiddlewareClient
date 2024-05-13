@@ -78,7 +78,7 @@ class GenericClient
         return $cache->get(md5($path));
     }
 
-    private function getCacheInfo(string $path, bool $catchExpired = false): string|bool
+    private function getCacheInfo(string $path, bool $catchExpired = false): object|bool
     {
         $cache = new RWFileCache();
 
