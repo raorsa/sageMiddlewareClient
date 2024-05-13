@@ -16,7 +16,7 @@
   "minimum-stability": "stable",
   "require": {
     "michielkempen/laravel-http-client": "^4.5",
-    "raorsa/rw-file-cache": "dev-master",
+    "raorsa/rw-file-cache": "^1.0",
     "monolog/monolog": "*"
   }
 }
