@@ -78,6 +78,15 @@ class GenericClient
         return $cache->get(md5($path));
     }
 
+    private function getLast(string $path, bool $catchExpired = false): string|bool
+    {
+        $cache = new RWFileCache();
+
+        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
+
+        return $cache->getLast(md5($path));
+    }
+
     private function getCacheInfo(string $path, bool $catchExpired = false): object|bool
     {
         $cache = new RWFileCache();
@@ -109,10 +118,12 @@ class GenericClient
             if ($cache && $return != '[]') {
                 $this->saveCache($path, $response->body());
             }
+            $this->log($path . '->' . $return);
         } else {
-            $return = false;
+            $return = $this->getLast($path);
+            $this->log($path . '||cacheLAST->' . $response);
         }
-        $this->log($path . '->' . $return);
+
         return $return;
     }
 
