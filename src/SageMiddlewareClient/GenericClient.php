@@ -106,7 +106,11 @@ class GenericClient
         $path = $this->url . $method;
         $response = $this->getCache($path);
         $object = $this->getCacheInfo($path);
-        $this->log('CACHE RESULT  ' . $path . '||' . date("Y-m-d H:i:s", $object->expiryTimestamp) . '->' . $response);
+        $date = 'NO SET';
+        if (isset($object->expiryTimestamp)) {
+            $date = date("Y-m-d H:i:s", $object->expiryTimestamp);
+        }
+        $this->log('CACHE RESULT  ' . $path . '||' . $date . '->' . $response);
         if ($response != false) {
             $this->log('CACHE GET     ' . $path . '||cache->' . $response);
             return $response;
