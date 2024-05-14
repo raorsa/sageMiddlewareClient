@@ -19,7 +19,7 @@ class GenericClient
     private $log_dir;
     private $lengthCacheData;
 
-    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 20)
+    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 100)
     {
         if (is_null($cache_dir)) {
             $cache_dir = "/tmp/sageCache." . md5(getcwd()) . "/";
@@ -106,9 +106,9 @@ class GenericClient
         $path = $this->url . $method;
         $response = $this->getCache($path);
         $object = $this->getCacheInfo($path);
-        $this->log('CACHE RESULT ' . $path . '||' . date("Y-m-d H:i:s", $object->expiryTimestamp) . '->' . $response);
+        $this->log('CACHE RESULT  ' . $path . '||' . date("Y-m-d H:i:s", $object->expiryTimestamp) . '->' . $response);
         if ($response != false) {
-            $this->log($path . '||cache->' . $response);
+            $this->log('CACHE GET     ' . $path . '||cache->' . $response);
             return $response;
         }
 
@@ -122,7 +122,7 @@ class GenericClient
             $return = $response->body();
             if ($cache && $return != '[]') {
                 $this->saveCache($path, $response->body());
-                $this->log($path . '->' . $return);
+                $this->log('SERVER RESULT ' . $path . '->' . $return);
             } else {
                 $return = false;
             }
@@ -130,7 +130,7 @@ class GenericClient
 
         if (!$return) {
             $return = $this->getLast($path);
-            $this->log($path . '||cacheLAST->' . $response);
+            $this->log('CACHE LAST    ' . $path . '||cache->' . $response);
         }
 
         return $return;
