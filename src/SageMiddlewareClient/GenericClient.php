@@ -59,7 +59,7 @@ class GenericClient
             $log = new Logger('Sageclient');
             $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
             if ($this->lengthCacheData !== 0) {
-                $data = substr($data, $this->lengthCacheData);
+                $data = substr($data, 0, $this->lengthCacheData);
             }
             $log->info($data);
         }
