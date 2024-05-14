@@ -17,8 +17,9 @@ class GenericClient
     private $cache_life;
     private $cache_dir;
     private $log_dir;
+    private $lengthCacheData;
 
-    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null)
+    public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 20)
     {
         if (is_null($cache_dir)) {
             $cache_dir = "/tmp/sageCache." . md5(getcwd()) . "/";
@@ -30,6 +31,7 @@ class GenericClient
         $this->cache_life = $cacheLife; // in minutes
         $this->cache_dir = $cache_dir;
         $this->log_dir = $log_dir;
+        $this->lengthCacheData = $lengthCacheData;
 
         $options = [
             'email' => $email,
@@ -48,15 +50,18 @@ class GenericClient
     }
 
     /**
-     * @param false|string $return
+     * @param false|string $data
      * @return void
      */
-    public function log($return): void
+    public function log($data): void
     {
         if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
             $log = new Logger('Sageclient');
             $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
-            $log->info($return);
+            if ($this->lengthCacheData !== 0) {
+                $data = substr($data, $this->lengthCacheData);
+            }
+            $log->info($data);
         }
     }
 
@@ -112,14 +117,18 @@ class GenericClient
         } else {
             $response = Http::withToken($this->login)->get($path);
         }
-
+        $return = false;
         if ($response->successful()) {
             $return = $response->body();
             if ($cache && $return != '[]') {
                 $this->saveCache($path, $response->body());
+                $this->log($path . '->' . $return);
+            } else {
+                $return = false;
             }
-            $this->log($path . '->' . $return);
-        } else {
+        }
+
+        if (!$return) {
             $return = $this->getLast($path);
             $this->log($path . '||cacheLAST->' . $response);
         }
