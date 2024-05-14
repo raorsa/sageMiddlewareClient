@@ -55,7 +55,7 @@ class GenericClient
      */
     public function log($data): void
     {
-        if (isset($_ENV['LOG_LEVEL']) && !is_null($this->log_dir)) {
+        if (isset($_ENV['LOG_LEVEL']) && isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'] && !is_null($this->log_dir)) {
             $log = new Logger('Sageclient');
             $log->pushHandler(new StreamHandler($this->log_dir . '/raorsa.log', Level::fromName($_ENV['LOG_LEVEL'])));
             if ($this->lengthCacheData !== 0) {
