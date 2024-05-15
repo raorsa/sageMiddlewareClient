@@ -12,12 +12,14 @@ class GenericClient
 {
     const URL_LOGIN = 'login';
 
-    private $url;
-    private $login;
-    private $cache_life;
-    private $cache_dir;
-    private $log_dir;
-    private $lengthCacheData;
+    private $url = null;
+    private $login = null;
+    private $cache_life = null;
+    private $cache_dir = null;
+    private $log_dir = null;
+    private $lengthCacheData = null;
+
+    private $loginValues = [];
 
     public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 100)
     {
@@ -33,20 +35,28 @@ class GenericClient
         $this->log_dir = $log_dir;
         $this->lengthCacheData = $lengthCacheData;
 
-        $options = [
+        $this->loginValues = [
             'email' => $email,
             'password' => $password
         ];
         if (!is_null($name)) {
-            $options['name'] = $name;
+            $this->loginValues['name'] = $name;
         }
+    }
 
-        if (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']) {
-            $this->login = Http::withoutVerifying()->post($this->url . self::URL_LOGIN, $options)->json('token');
-        } else {
-            $this->login = Http::post($this->url . self::URL_LOGIN, $options)->json('token');
+    /**
+     * @param array $options
+     * @return void
+     */
+    private function login($verify = true): void
+    {
+        if (isset($this->loginValues['email'], $this->loginValues['password']) && is_null($this->login)) {
+            if ($verify) {
+                $this->login = Http::withoutVerifying()->post($this->url . self::URL_LOGIN, $this->loginValues)->json('token');
+            } else {
+                $this->login = Http::post($this->url . self::URL_LOGIN, $this->loginValues)->json('token');
+            }
         }
-
     }
 
     /**
@@ -116,11 +126,14 @@ class GenericClient
             return $response;
         }
 
+        $this->login(isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']);
+
         if (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']) {
             $response = Http::withoutVerifying()->withToken($this->login)->get($path);
         } else {
             $response = Http::withToken($this->login)->get($path);
         }
+
         $return = false;
         if ($response->successful()) {
             $return = $response->body();
