@@ -10,16 +10,13 @@ use Raorsa\RWFileCache\RWFileCache;
 
 class GenericClient
 {
-    const URL_LOGIN = 'login';
-
+    const TOKEN_LIFE_TIME = 518400; // 6 days
     private $url = null;
-    private $login = null;
     private $cache_life = null;
     private $cache_dir = null;
     private $log_dir = null;
     private $lengthCacheData = null;
-
-    private $loginValues = [];
+    private $connexion = null;
 
     public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 100)
     {
@@ -35,29 +32,18 @@ class GenericClient
         $this->log_dir = $log_dir;
         $this->lengthCacheData = $lengthCacheData;
 
-        $this->loginValues = [
-            'email' => $email,
-            'password' => $password
-        ];
-        if (!is_null($name)) {
-            $this->loginValues['name'] = $name;
+        $token = $this->getCache($this->url);
+        if ($token !== '' && $token !== false) {
+            $this->log('CACHE LOGIN   ' . $this->url . '||cache->' . substr($token, 0, 10));
+            $this->connexion = Connexion::open($this->url, $token, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']));
+        } else {
+            $this->log('SERVER LOGIN  ' . $this->url . '||cache->' . $email);
+            $this->connexion = Connexion::connect($this->url, $email, $password, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']), $name);
         }
+
+
     }
 
-    /**
-     * @param array $options
-     * @return void
-     */
-    private function login($verify = true): void
-    {
-        if (isset($this->loginValues['email'], $this->loginValues['password']) && is_null($this->login)) {
-            if ($verify) {
-                $this->login = Http::withoutVerifying()->post($this->url . self::URL_LOGIN, $this->loginValues)->json('token');
-            } else {
-                $this->login = Http::post($this->url . self::URL_LOGIN, $this->loginValues)->json('token');
-            }
-        }
-    }
 
     /**
      * @param false|string $data
@@ -75,16 +61,21 @@ class GenericClient
         }
     }
 
-    private function saveCache(string $path, string $body)
+    private function saveCache(string $path, string $body, int $lifetime = null)
     {
         $cache = new RWFileCache();
 
         $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
 
-        $cache->set(md5($path), $body, $this->cache_life * 60);
+        if (is_null($lifetime)) {
+            $lifetime = $this->cache_life * 60;
+        }
+
+        $cache->set(md5($path), $body, $lifetime);
     }
 
-    private function getCache(string $path, bool $catchExpired = false): string|bool
+    private
+    function getCache(string $path): string|bool
     {
         $cache = new RWFileCache();
 
@@ -93,7 +84,8 @@ class GenericClient
         return $cache->get(md5($path));
     }
 
-    private function getLast(string $path, bool $catchExpired = false): string|bool
+    private
+    function getLast(string $path, bool $catchExpired = false): string|bool
     {
         $cache = new RWFileCache();
 
@@ -102,7 +94,8 @@ class GenericClient
         return $cache->getLast(md5($path));
     }
 
-    private function getCacheInfo(string $path, bool $catchExpired = false): object|bool
+    private
+    function getCacheInfo(string $path, bool $catchExpired = false): object|bool
     {
         $cache = new RWFileCache();
 
@@ -111,7 +104,8 @@ class GenericClient
         return $cache->getObject(md5($path));
     }
 
-    protected function call(string $method, bool $cache = true): string|bool
+    protected
+    function call(string $method, bool $cache = true): string|bool
     {
         $path = $this->url . $method;
         $response = $this->getCache($path);
@@ -121,18 +115,17 @@ class GenericClient
             $date = date("Y-m-d H:i:s", $object->expiryTimestamp);
         }
         $this->log('CACHE RESULT  ' . $path . '||' . $date . '->' . $response);
-        if ($response != false) {
+        if ($response !== false) {
             $this->log('CACHE GET     ' . $path . '||cache->' . $response);
             return $response;
         }
+        $token = '';
+        $response = $this->connexion->call($method, $token);
 
-        $this->login(isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']);
-
-        if (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']) {
-            $response = Http::withoutVerifying()->withToken($this->login)->get($path);
-        } else {
-            $response = Http::withToken($this->login)->get($path);
+        if ($token !== '') {
+            $this->saveCache($this->url, $token, $this->TOKEN_LIFE_TIME);
         }
+
 
         $return = false;
         if ($response->successful()) {
@@ -153,7 +146,8 @@ class GenericClient
         return $return;
     }
 
-    protected function callJson(string $method, bool $cache = true)
+    protected
+    function callJson(string $method, bool $cache = true)
     {
         return json_decode($this->call($method, $cache));
     }
