@@ -123,7 +123,7 @@ class GenericClient
         $response = $this->connexion->call($method, $token);
 
         if ($token !== '') {
-            $this->saveCache($this->url, $token, $this->TOKEN_LIFE_TIME);
+            $this->saveCache($this->url, $token, self::TOKEN_LIFE_TIME);
         }
 
 
