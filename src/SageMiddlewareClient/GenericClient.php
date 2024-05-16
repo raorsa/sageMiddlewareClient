@@ -20,6 +20,7 @@ class GenericClient
     private $email = null;
     private $password = null;
     private $name = null;
+    private $cache = null;
 
     public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 100)
     {
@@ -31,12 +32,15 @@ class GenericClient
         }
         $this->url = str_replace('//', '/', $url . '/');
         $this->cache_life = $cacheLife; // in minutes
-        $this->cache_dir = $cache_dir;
         $this->log_dir = $log_dir;
         $this->lengthCacheData = $lengthCacheData;
         $this->email = $email;
         $this->password = $password;
         $this->name = $name;
+
+        $this->cache = new RWFileCache();
+
+        $this->cache->changeConfig(["cacheDirectory" => $cache_dir, 'gzipCompression' => (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'])]);
 
         $this->connect();
 
@@ -79,58 +83,37 @@ class GenericClient
 
     private function saveCache(string $path, string $body, int $lifetime = null)
     {
-        $cache = new RWFileCache();
-
-        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
-
         if (is_null($lifetime)) {
             $lifetime = $this->cache_life * 60;
         }
         if ($lifetime !== 0) {
-            $cache->set(md5($path), $body, $lifetime);
+            $this->cache->set(md5($path), $body, $lifetime);
         }
-
     }
 
     private
     function getCache(string $path): string|bool
     {
-        $cache = new RWFileCache();
-
-        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
-
-        return $cache->get(md5($path));
+        return $this->cache->get(md5($path));
     }
 
     private
     function removeCache(string $path): bool
     {
-        $cache = new RWFileCache();
-
-        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
-
-        return $cache->delete(md5($path));
+        return $this->cache->delete(md5($path));
 
     }
 
     private
-    function getLast(string $path, bool $catchExpired = false): string|bool
+    function getLast(string $path): string|bool
     {
-        $cache = new RWFileCache();
-
-        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
-
-        return $cache->getLast(md5($path));
+        return $this->cache->getLast(md5($path));
     }
 
     private
-    function getCacheInfo(string $path, bool $catchExpired = false): object|bool
+    function getCacheInfo(string $path): object|bool
     {
-        $cache = new RWFileCache();
-
-        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
-
-        return $cache->getObject(md5($path));
+        return $this->cache->getObject(md5($path));
     }
 
     protected
@@ -152,7 +135,7 @@ class GenericClient
 
         $response = $this->connexion->call($method, $token);
 
-        if ($response->statusCode() === 405) {
+        if ($response->getStatusCode() === 405) {
             $this->removeCache($this->url);
             $this->connect();
             $response = $this->connexion->call($method, $token);
@@ -183,8 +166,7 @@ class GenericClient
         return $return;
     }
 
-    protected
-    function callJson(string $method, bool $cache = true)
+    protected function callJson(string $method, bool $cache = true)
     {
         return json_decode($this->call($method, $cache));
     }
