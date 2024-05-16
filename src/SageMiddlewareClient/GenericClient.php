@@ -17,6 +17,9 @@ class GenericClient
     private $log_dir = null;
     private $lengthCacheData = null;
     private $connexion = null;
+    private $email = null;
+    private $password = null;
+    private $name = null;
 
     public function __construct(string $url, string $email, string $password, string $name = null, int $cacheLife = 10, string $cache_dir = null, string $log_dir = null, int $lengthCacheData = 100)
     {
@@ -31,16 +34,11 @@ class GenericClient
         $this->cache_dir = $cache_dir;
         $this->log_dir = $log_dir;
         $this->lengthCacheData = $lengthCacheData;
+        $this->email = $email;
+        $this->password = $password;
+        $this->name = $name;
 
-        $token = $this->getCache($this->url);
-        if ($token !== '' && $token !== false) {
-            $this->log('CACHE LOGIN   ' . $this->url . '||cache->' . substr($token, 0, 10));
-            $this->connexion = Connexion::open($this->url, $token, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']));
-        } else {
-            $this->log('SERVER LOGIN  ' . $this->url . '||cache->' . $email);
-            $this->connexion = Connexion::connect($this->url, $email, $password, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']), $name);
-        }
-
+        $this->connect();
 
     }
 
@@ -61,6 +59,24 @@ class GenericClient
         }
     }
 
+    /**
+     * @param string $email
+     * @param string $password
+     * @param string|null $name
+     * @return void
+     */
+    public function connect(): void
+    {
+        $token = $this->getCache($this->url);
+        if ($token !== '' && $token !== false) {
+            $this->log('CACHE LOGIN   ' . $this->url . '||cache->' . substr($token, 0, 10));
+            $this->connexion = Connexion::open($this->url, $token, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']));
+        } else {
+            $this->log('SERVER LOGIN  ' . $this->url . '->' . $this->email);
+            $this->connexion = Connexion::connect($this->url, $this->email, $this->password, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']), $this->name);
+        }
+    }
+
     private function saveCache(string $path, string $body, int $lifetime = null)
     {
         $cache = new RWFileCache();
@@ -70,8 +86,10 @@ class GenericClient
         if (is_null($lifetime)) {
             $lifetime = $this->cache_life * 60;
         }
+        if ($lifetime !== 0) {
+            $cache->set(md5($path), $body, $lifetime);
+        }
 
-        $cache->set(md5($path), $body, $lifetime);
     }
 
     private
@@ -82,6 +100,17 @@ class GenericClient
         $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
 
         return $cache->get(md5($path));
+    }
+
+    private
+    function removeCache(string $path): bool
+    {
+        $cache = new RWFileCache();
+
+        $cache->changeConfig(["cacheDirectory" => $this->cache_dir]);
+
+        return $cache->delete(md5($path));
+
     }
 
     private
@@ -107,6 +136,7 @@ class GenericClient
     protected
     function call(string $method, bool $cache = true): string|bool
     {
+        $token = '';
         $path = $this->url . $method;
         $response = $this->getCache($path);
         $object = $this->getCacheInfo($path);
@@ -119,8 +149,14 @@ class GenericClient
             $this->log('CACHE GET     ' . $path . '||cache->' . $response);
             return $response;
         }
-        $token = '';
+
         $response = $this->connexion->call($method, $token);
+
+        if ($response->statusCode() === 405) {
+            $this->removeCache($this->url);
+            $this->connect();
+            $response = $this->connexion->call($method, $token);
+        }
 
         if ($token !== '') {
             $this->saveCache($this->url, $token, self::TOKEN_LIFE_TIME);
@@ -137,6 +173,7 @@ class GenericClient
                 $return = false;
             }
         }
+
 
         if (!$return) {
             $return = $this->getLast($path);
