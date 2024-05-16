@@ -3,6 +3,8 @@
 namespace Raorsa\SageMiddlewareClient;
 
 
+use Illuminate\Support\Facades\Http;
+
 /**
  * The Singleton class defines the `GetInstance` method that serves as an
  * alternative to constructor and lets clients access the same instance of this

@@ -2,7 +2,7 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-use Illuminate\Support\Facades\Http;
+
 use Monolog\Level;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
