@@ -87,6 +87,9 @@ class Connexion
         $instance = self::getInstance();
         $instance->url = $url;
         $instance->login = $token;
+        $instance->verify = $verify;
+
+        return $instance;
     }
 
     private function login(): void
