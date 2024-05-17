@@ -40,7 +40,9 @@ class GenericClient
 
         $this->cache = new RWFileCache();
 
-        $this->cache->changeConfig(["cacheDirectory" => $cache_dir, 'gzipCompression' => (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'])]);
+        $compress = (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'] === "false");
+
+        $this->cache->changeConfig(["cacheDirectory" => $cache_dir, 'gzipCompression' => $compress]);
 
         $this->connect();
 
@@ -69,9 +71,9 @@ class GenericClient
      * @param string|null $name
      * @return void
      */
-    public function connect(): void
+    public function connect(bool $force = false): void
     {
-        $token = $this->getCache($this->url);
+        $token = $force ? !$force : $this->getCache($this->url);
         if ($token !== '' && $token !== false) {
             $this->log('CACHE LOGIN   ' . $this->url . '||cache->' . substr($token, 0, 10));
             $this->connexion = Connexion::open($this->url, $token, (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG']));
@@ -111,7 +113,7 @@ class GenericClient
     }
 
     private
-    function getCacheInfo(string $path): object|bool
+    function getCacheInfo(string $path): object|bool|null
     {
         return $this->cache->getObject(md5($path));
     }
@@ -136,8 +138,10 @@ class GenericClient
         $response = $this->connexion->call($method, $token);
 
         if ($response->getStatusCode() === 405) {
+            $this->log('CACHE LOGIN KO' . $path);
             $this->removeCache($this->url);
-            $this->connect();
+            $token = '';
+            $this->connect(true);
             $response = $this->connexion->call($method, $token);
         }
 
