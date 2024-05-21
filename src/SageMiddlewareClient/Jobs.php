@@ -2,6 +2,8 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
+use Symfony\Component\HttpClient\HttpClient;
+
 class Jobs extends GenericClient
 {
     const BASE = 'jobs';
