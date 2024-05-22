@@ -2,13 +2,7 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-
-use MichielKempen\LaravelHttpClient\HttpClient;
-use Monolog\Level;
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-use Raorsa\RWFileCache\RWFileCache;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Component\HttpClient\HttpClient;
 
 class GenericClient
 {
@@ -19,7 +13,7 @@ class GenericClient
 
     public function __construct(string $url, string $user, string $password, int $cacheLife = 10, string $cache_dir = null)
     {
-        $connection = Connexion::getInstance(\Symfony\Component\HttpClient\HttpClient::create());
+        $connection = Connexion::getInstance(HttpClient::create());
         $connection->connect($url, $user, $password);
         $this->connexion = $connection;
         $this->log = new logWrapper();
