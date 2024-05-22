@@ -11,10 +11,10 @@ class GenericClient
     private $log = null;
     private $connexion = null;
 
-    public function __construct(string $url, string $user, string $password, int $cacheLife = 10, string $cache_dir = null)
+    public function __construct(string $url, string $user, string $password, int $cacheLife = 10, string $cache_dir = null, bool $verify = true, string $name = 'SageClient')
     {
         $connection = Connexion::getInstance(HttpClient::create());
-        $connection->connect($url, $user, $password);
+        $connection->connect($url, $user, $password, $verify, $name);
         $this->connexion = $connection;
         $this->log = new logWrapper();
         $this->cache = new cacheWrapper($cacheLife, $cache_dir);

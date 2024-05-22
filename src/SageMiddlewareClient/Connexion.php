@@ -46,7 +46,7 @@ class Connexion
         return $this->url;
     }
 
-    public function connect(string $url, string $email, string $password, bool $verify = true, string $name = null): void
+    public function connect(string $url, string $email, string $password, bool $verify = true, string $name = 'SageClient'): void
     {
         $this->url = $url;
         $this->verify = $verify;
