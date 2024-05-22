@@ -58,7 +58,7 @@ class GenericClient
 
         if ($useCache && $return !== '') {
             $return = $this->cache->getLast($path);
-            $this->log->logCache($path, $response, 'LAST');
+            $this->log->logCache($path, $return, 'LAST');
         }
 
         return $return;

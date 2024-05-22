@@ -26,7 +26,7 @@ class logWrapper implements LogWrapperInterface
      * @param false|string $data
      * @return void
      */
-    private function log($data): void
+    private function log(string $data): void
     {
         if (!is_null($this->log_dir)) {
             $log = new Logger('Sageclient');
@@ -38,12 +38,12 @@ class logWrapper implements LogWrapperInterface
         }
     }
 
-    public function logCache($path, $data, $verb)
+    public function logCache(string $path, string $data, string $verb): void
     {
         $this->log(substr(str_pad('CACHE ' . $verb, 15, ' '), 0, 15) . '||' . $path . '->' . $data);
     }
 
-    public function logServer($path, $data, $verb)
+    public function logServer(string $path, string $data, string $verb): void
     {
         $this->log(substr(str_pad('SERVER ' . $verb, 15, ' '), 0, 15) . '||' . $path . '->' . $data);
     }
