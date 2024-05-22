@@ -73,7 +73,10 @@ class Connexion
                 ]);
 
             if ($request->getStatusCode() >= 200 && $request->getStatusCode() < 300) {
-                $this->login = json_decode($request->getContent())->token;
+                $data = json_decode($request->getContent());
+                if (isset($data->token)) {
+                    $this->login = $data->token;
+                }
             }
         }
     }
