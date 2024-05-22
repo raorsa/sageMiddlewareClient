@@ -50,12 +50,10 @@ class ClientTest extends TestCase
             ])])
             ->onlyMethods([])
             ->getMock();
-
-        $job = new Jobs('https://localhost/', 'user@domain.com', 'password');
         $connexion->connect('https://localhost/', 'user@domain.com', 'password', false, 'Josevi');
-        $job->setLog($this->log);
-        $job->setCache($this->cache);
-        $job->setConnexion($connexion);
+
+        $job = Jobs::mount($connexion, $this->log, $this->cache);
+
         $result = $job->list(false);
         $this->assertEquals("true", $result->data);
     }
@@ -71,12 +69,10 @@ class ClientTest extends TestCase
             ])])
             ->onlyMethods([])
             ->getMock();
-
-        $job = new Jobs('https://localhost/', 'user@domain.com', 'password');
         $connexion->connect('https://localhost/', 'user@domain.com', 'password', false, 'Josevi');
-        $job->setLog($this->log);
-        $job->setCache($this->cache);
-        $job->setConnexion($connexion);
+
+        $job = Jobs::mount($connexion, $this->log, $this->cache);
+
         $job->list();
         $result = $job->list();
         $this->assertEquals("true", $result->data);
@@ -92,12 +88,10 @@ class ClientTest extends TestCase
             ])])
             ->onlyMethods([])
             ->getMock();
-
-        $job = new Jobs('https://localhost/', 'user@domain.com', 'password');
         $connexion->connect('https://localhost/', 'user@domain.com', 'password', false, 'Josevi');
-        $job->setLog($this->log);
-        $job->setCache($this->cache);
-        $job->setConnexion($connexion);
+
+        $job = Jobs::mount($connexion, $this->log, $this->cache);
+
         $result = $job->list();
         $this->assertEquals(false, $result);
     }
@@ -105,6 +99,7 @@ class ClientTest extends TestCase
     public function testCallCacheLast()
     {
         $this->cache->saveCache('https://localhost/jobs/list', '{"data": "true"}', time() + 1);
+        sleep(3);
 
         $connexion = $this
             ->getMockBuilder(Connexion::class)
@@ -115,12 +110,9 @@ class ClientTest extends TestCase
             ->onlyMethods([])
             ->getMock();
 
-        $job = new Jobs('https://localhost/', 'user@domain.com', 'password');
         $connexion->connect('https://localhost/', 'user@domain.com', 'password', false, 'Josevi');
-        sleep(3);
-        $job->setLog($this->log);
-        $job->setCache($this->cache);
-        $job->setConnexion($connexion);
+
+        $job = Jobs::mount($connexion, $this->log, $this->cache);
         $result = $job->list();
         $this->assertEquals("true", $result->data);
     }

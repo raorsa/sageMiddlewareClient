@@ -11,13 +11,21 @@ class GenericClient
     private $log = null;
     private $connexion = null;
 
-    public function __construct(string $url, string $user, string $password, int $cacheLife = 10, string $cache_dir = null, bool $verify = true, string $name = 'SageClient')
+    protected function __construct(Connexion $connection, logWrapperInterface $logWrapper, cacheWrapper $cache)
     {
-        $connection = Connexion::getInstance(HttpClient::create());
-        $connection->connect($url, $user, $password, $verify, $name);
         $this->connexion = $connection;
-        $this->log = new logWrapper();
-        $this->cache = new cacheWrapper($cacheLife, $cache_dir);
+        $this->log = $logWrapper;
+        $this->cache = $cache;
+    }
+
+    public static function make(string $url, string $user, string $password, bool $verify = true, string $name = 'SageClient', int $cacheLife = 10, string $cacheDir = null, bool $cacheCompress = true, string $logDir = null, int $logLengthData = 100): GenericClient
+    {
+        return new static(Connexion::mount($url, $user, $password, $verify, $name), new logWrapper($logDir, $logLengthData), new cacheWrapper($cacheLife, $cacheDir, $cacheCompress));
+    }
+
+    public static function mount(Connexion $connection, logWrapperInterface $logWrapper, cacheWrapper $cache): GenericClient
+    {
+        return new static($connection, $logWrapper, $cache);
     }
 
     protected function call(string $method, bool $useCache = true): string|bool

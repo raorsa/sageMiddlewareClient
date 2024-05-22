@@ -3,6 +3,7 @@
 namespace Raorsa\SageMiddlewareClient;
 
 
+use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
@@ -102,6 +103,25 @@ class Connexion
     public function setVerify(bool $verify): void
     {
         $this->verify = $verify;
+    }
+
+    public static function mount(string $url, string $email, string $password, bool $verify = true, string $name = 'SageClient'): Connexion
+    {
+        $connection = Connexion::getInstance(HttpClient::create());
+        $connection->url = $url;
+        $connection->verify = $verify;
+        $connection->loginValues['email'] = $email;
+        $connection->loginValues['password'] = $password;
+        $connection->loginValues['name'] = $name;
+
+        return $connection;
+    }
+
+    public static function link(string $token): Connexion
+    {
+        $connection = Connexion::getInstance(HttpClient::create());
+        $connection->login = $token;
+        return $connection;
     }
 
 }

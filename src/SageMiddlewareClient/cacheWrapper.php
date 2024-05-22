@@ -9,7 +9,7 @@ class cacheWrapper
     private $cache_life = null;
     private $cache = null;
 
-    public function __construct(int $cacheLife = 10, string $cache_dir = null)
+    public function __construct(int $cacheLife = 10, string $cache_dir = null, bool $compress = false)
     {
         if (is_null($cache_dir)) {
             $cache_dir = "/tmp/sageCache." . md5(getcwd()) . "/";
@@ -17,8 +17,6 @@ class cacheWrapper
         $this->cache_life = $cacheLife; // in minutes
 
         $this->cache = new RWFileCache();
-
-        $compress = (isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'] === "false");
 
         $this->cache->changeConfig(["cacheDirectory" => $cache_dir, 'gzipCompression' => $compress]);
 
