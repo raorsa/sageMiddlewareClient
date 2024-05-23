@@ -4,44 +4,44 @@ namespace Raorsa\SageMiddlewareClient;
 
 class Apparatus extends GenericClient
 {
-    const BASE = 'apparatus';
+    private const BASE = 'apparatus';
 
-    public function list(string $client, bool $cache = true)
+    public function list(string $client, bool $cache = true): object|false
     {
-        return $this->callJson(self::BASE . '/' . $client);
+        return $this->callJson(self::BASE . '/' . $client, $cache);
     }
 
-    public function interventions(string $id, bool $cache = true)
+    public function interventions(string $id, bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/' . $id . '/interventions', $cache);
     }
 
-    public function integrated(string $id, bool $cache = true)
+    public function integrated(string $id, bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/' . $id . '/integrated', $cache);
     }
 
-    public function brandInfo(string $id, bool $cache = true)
+    public function brandInfo(string $id, bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/brand/' . $id, $cache);
     }
 
-    public function brands(bool $cache = true)
+    public function brands(bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/brands', $cache);
     }
 
-    public function types(bool $cache = true)
+    public function types(bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/types', $cache);
     }
 
-    public function warranties(bool $cache = true)
+    public function warranties(bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/warranties', $cache);
     }
 
-    public function interventionsType(bool $cache = true)
+    public function interventionsType(bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/interventions-type', $cache);
     }

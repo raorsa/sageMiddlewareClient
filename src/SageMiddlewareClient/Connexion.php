@@ -3,18 +3,20 @@
 namespace Raorsa\SageMiddlewareClient;
 
 
+use RuntimeException;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
+use Throwable;
 
 class Connexion
 {
-    const URL_LOGIN = 'login';
-    private static $instances = [];
-    private $url = null;
-    private $login = null;
-    private $verify = true;
-    private $loginValues = [];
+    private const URL_LOGIN = 'login';
+    private static array $instances = [];
+    private string $url = "";
+    private string $login = "";
+    private bool $verify = true;
+    private array $loginValues = [];
     private HttpClientInterface $httpClient;
 
 
@@ -29,7 +31,7 @@ class Connexion
 
     public function __wakeup()
     {
-        throw new \Exception("Cannot unserialize a singleton.");
+        throw new RuntimeException("Cannot unserialize a singleton.");
     }
 
     public static function getInstance(HttpClientInterface $httpClient): Connexion
@@ -63,37 +65,45 @@ class Connexion
 
     private function login(): void
     {
-        if (isset($this->loginValues['email'], $this->loginValues['password']) && is_null($this->login)) {
-            $request = $this->httpClient->request(
-                'POST',
-                $this->url . self::URL_LOGIN,
-                [
-                    "verify_peer" => $this->verify,
-                    "verify_host" => $this->verify,
-                    "body" => $this->loginValues,
-                ]);
+        if (isset($this->loginValues['email'], $this->loginValues['password']) && $this->login === '') {
+            try {
+                $request = $this->httpClient->request(
+                    'POST',
+                    $this->url . self::URL_LOGIN,
+                    [
+                        "verify_peer" => $this->verify,
+                        "verify_host" => $this->verify,
+                        "body" => $this->loginValues,
+                    ]);
 
-            if ($request->getStatusCode() >= 200 && $request->getStatusCode() < 300) {
-                $data = json_decode($request->getContent());
-                if (isset($data->token)) {
-                    $this->login = $data->token;
+                if ($request->getStatusCode() >= 200 && $request->getStatusCode() < 300) {
+                    $data = json_decode($request->getContent(false), false, 512, JSON_THROW_ON_ERROR);
+                    if (isset($data->token)) {
+                        $this->login = $data->token;
+                    }
                 }
+            } catch (Throwable) {
             }
         }
     }
 
-    public function call(string $method, string &$token = ''): ResponseInterface
+    public function call(string $method, string &$token = ''): ResponseInterface|null
     {
+        $response = null;
         do {
             $this->login();
-
-            $response = $this->httpClient->request('GET', $this->url . $method, ['auth_bearer' => $this->login]);
-            if ($response->getStatusCode() === 405) {
-                $this->login = null;
-                $block = true;
-            } else {
+            try {
+                $response = $this->httpClient->request('GET', $this->url . $method, ['auth_bearer' => $this->login]);
+                if ($response->getStatusCode() === 405) {
+                    $this->login = "";
+                    $block = true;
+                } else {
+                    $block = false;
+                }
+            } catch (Throwable) {
                 $block = false;
             }
+
         } while ($block);
 
         $token = $this->login;
@@ -107,7 +117,7 @@ class Connexion
 
     public static function mount(string $url, string $email, string $password, bool $verify = true, string $name = 'SageClient'): Connexion
     {
-        $connection = Connexion::getInstance(HttpClient::create());
+        $connection = self::getInstance(HttpClient::create());
         $connection->url = $url;
         $connection->verify = $verify;
         $connection->loginValues['email'] = $email;
@@ -119,7 +129,7 @@ class Connexion
 
     public static function link(string $token): Connexion
     {
-        $connection = Connexion::getInstance(HttpClient::create());
+        $connection = self::getInstance(HttpClient::create());
         $connection->login = $token;
         return $connection;
     }

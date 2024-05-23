@@ -6,8 +6,8 @@ use Raorsa\RWFileCache\RWFileCache;
 
 class cacheWrapper
 {
-    private $cache_life = null;
-    private $cache = null;
+    private int $cache_life;
+    private RWFileCache $cache;
 
     public function __construct(int $cacheLife = 10, string $cache_dir = null, bool $compress = false)
     {
@@ -22,7 +22,7 @@ class cacheWrapper
 
     }
 
-    public function saveCache(string $path, string $body, int $lifetime = null)
+    public function saveCache(string $path, string $body, int $lifetime = null): void
     {
         if (is_null($lifetime)) {
             $lifetime = $this->cache_life * 60;
@@ -37,22 +37,12 @@ class cacheWrapper
         return $this->cache->get(md5($path));
     }
 
-    public function removeCache(string $path): bool
-    {
-        return $this->cache->delete(md5($path));
-    }
-
     public function getLast(string $path): string|bool
     {
         return $this->cache->getLast(md5($path));
     }
 
-    public function getCacheInfo(string $path): object|bool|null
-    {
-        return $this->cache->getObject(md5($path));
-    }
-
-    public function clean()
+    public function clean(): void
     {
         $this->cache->flush();
     }

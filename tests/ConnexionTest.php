@@ -18,7 +18,9 @@ use Symfony\Component\HttpClient\Response\MockResponse;
 #[CoversFunction('call')]
 class ConnexionTest extends TestCase
 {
-    public function testAutoLogin()
+    private Connexion $connexion;
+
+    public function testAutoLogin(): void
     {
         $httpClient = new MockHttpClient([
             new MockResponse('{"token": "12345678"}', ['http_code' => 200, 'response_headers' => ['Content-Type: application/json']]),
@@ -38,7 +40,7 @@ class ConnexionTest extends TestCase
         $this->assertEquals('https://localhost', $this->connexion->getUrl());
     }
 
-    public function testTokenFail()
+    public function testTokenFail(): void
     {
         $httpClient = new MockHttpClient([
             new MockResponse('{"data": "false"}', ['http_code' => 405, 'response_headers' => ['Content-Type: application/json']]),
@@ -60,7 +62,7 @@ class ConnexionTest extends TestCase
         $this->assertEquals('https://localhost', $this->connexion->getUrl());
     }
 
-    public function testTokenFound()
+    public function testTokenFound(): void
     {
         $httpClient = new MockHttpClient([
             new MockResponse('{"data": "false"}', ['http_code' => 200, 'response_headers' => ['Content-Type: application/json']]),

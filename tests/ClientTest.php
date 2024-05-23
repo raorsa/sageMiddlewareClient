@@ -1,18 +1,17 @@
 <?php
 
-use Raorsa\SageMiddlewareClient\Connexion;
-use Raorsa\SageMiddlewareClient\GenericClient;
-use Raorsa\SageMiddlewareClient\logWrapperEmpty;
-use Raorsa\SageMiddlewareClient\cacheWrapper;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Raorsa\SageMiddlewareClient\Apparatus;
 use Raorsa\SageMiddlewareClient\Articles;
+use Raorsa\SageMiddlewareClient\cacheWrapper;
 use Raorsa\SageMiddlewareClient\Clients;
+use Raorsa\SageMiddlewareClient\Connexion;
 use Raorsa\SageMiddlewareClient\DeliveryNotes;
+use Raorsa\SageMiddlewareClient\GenericClient;
 use Raorsa\SageMiddlewareClient\Invoices;
 use Raorsa\SageMiddlewareClient\Jobs;
-use PHPUnit\Framework\TestCase;
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\CoversFunction;
+use Raorsa\SageMiddlewareClient\logWrapperEmpty;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
@@ -40,7 +39,7 @@ class ClientTest extends TestCase
         unset($this->log, $this->cache);
     }
 
-    public function testCallWithOutCache()
+    public function testCallWithOutCache(): void
     {
         $connexion = $this
             ->getMockBuilder(Connexion::class)
@@ -58,7 +57,7 @@ class ClientTest extends TestCase
         $this->assertEquals("true", $result->data);
     }
 
-    public function testCallWithCache()
+    public function testCallWithCache(): void
     {
         $connexion = $this
             ->getMockBuilder(Connexion::class)
@@ -78,7 +77,7 @@ class ClientTest extends TestCase
         $this->assertEquals("true", $result->data);
     }
 
-    public function testCallNoServer()
+    public function testCallNoServer(): void
     {
         $connexion = $this
             ->getMockBuilder(Connexion::class)
@@ -93,10 +92,10 @@ class ClientTest extends TestCase
         $job = Jobs::mount($connexion, $this->log, $this->cache);
 
         $result = $job->list();
-        $this->assertEquals(false, $result);
+        $this->assertFalse($result);
     }
 
-    public function testCallCacheLast()
+    public function testCallCacheLast(): void
     {
         $this->cache->saveCache('https://localhost/jobs/list', '{"data": "true"}', time() + 1);
         sleep(3);

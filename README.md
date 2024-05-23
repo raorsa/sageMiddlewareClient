@@ -8,7 +8,7 @@ List steps to get my project started here.
 
 # [Site Title](http://www.example.com/site-url-here)
 
-Any Github tags here.
+Any GitHub tags here.
 
 Short Description here.
 

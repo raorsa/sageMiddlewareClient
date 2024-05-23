@@ -2,14 +2,14 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-use Symfony\Component\HttpClient\HttpClient;
+use Throwable;
 
 class GenericClient
 {
-    const TOKEN_LIFE_TIME = 518400; // 6 days
-    private $cache = null;
-    private $log = null;
-    private $connexion = null;
+    private const TOKEN_LIFE_TIME = 518400; // 6 days
+    private cacheWrapper $cache;
+    private logWrapperInterface $log;
+    private Connexion $connexion;
 
     protected function __construct(Connexion $connection, logWrapperInterface $logWrapper, cacheWrapper $cache)
     {
@@ -44,9 +44,18 @@ class GenericClient
                 $this->connexion->open($token);
             }
         }
-        $oldToken = $token;
-        $response = $this->connexion->call($method, $token);
 
+        $oldToken = $token;
+
+        try {
+            $response = $this->connexion->call($method, $token);
+            $code = $response->getStatusCode();
+            $return = $response->getContent();
+        } catch (Throwable) {
+            $code = 500;
+            $return = false;
+            $response = null;
+        }
         if ($token !== '' && !is_null($token) && $useCache) {
             $this->cache->saveCache($this->connexion->getUrl(), $token, self::TOKEN_LIFE_TIME);
             if ($oldToken !== $token) {
@@ -54,13 +63,10 @@ class GenericClient
             }
         }
 
-        $return = false;
-        if ($response->getStatusCode() >= 200 && $response->getStatusCode() < 300) {
-            $return = $response->getContent();
-            if ($useCache && $return !== '') {
-                $this->cache->saveCache($path, $return);
-                $this->log->logServer($path, $return, 'RESULT');
-            }
+
+        if ($code >= 200 && $code < 300 && $useCache && $return !== '' && $return !== false) {
+            $this->cache->saveCache($path, $return);
+            $this->log->logServer($path, $return, 'RESULT');
         }
 
 
@@ -72,9 +78,14 @@ class GenericClient
         return $return;
     }
 
-    protected function callJson(string $method, bool $cache = true)
+    protected function callJson(string $method, bool $cache = true): object|false
     {
-        return json_decode($this->call($method, $cache));
+        try {
+            return json_decode($this->call($method, $cache), false, 512, JSON_THROW_ON_ERROR);
+        } catch (Throwable) {
+            return false;
+        }
+
     }
 
     public function setCache(?cacheWrapper $cache): void
