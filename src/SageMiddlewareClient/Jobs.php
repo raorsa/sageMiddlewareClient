@@ -11,6 +11,11 @@ class Jobs extends GenericClient
         return $this->callJson(self::BASE . '/list', $cache);
     }
 
+    public function listReport(bool $cache = true): object|false
+    {
+        return $this->callJson(self::BASE . '/list-report', $cache);
+    }
+
     public function operations(bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/operations', $cache);
