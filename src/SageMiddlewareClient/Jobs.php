@@ -31,9 +31,9 @@ class Jobs extends GenericClient
         return $this->callJson(self::BASE . '/job/' . $id, $cache);
     }
 
-    public function getSN(string $id, bool $cache = true): object|false
+    public function getSN(string $id, bool $cache = true): string|false
     {
-        return $this->callJson(self::BASE . '/jobsn/' . $id, $cache);
+        return json_decode($this->call(self::BASE . '/jobsn/' . $id, $cache));
     }
 
     public function importLog(string $date, bool $cache = true): object|false
