@@ -78,11 +78,11 @@ class GenericClient
         return $return;
     }
 
-    protected function callJson(string $method, bool $cache = true): object|false
+    protected function callJson(string $method, bool $cache = true): object|false|array|string
     {
         try {
             return json_decode($this->call($method, $cache), false, 512, JSON_THROW_ON_ERROR);
-        } catch (Throwable) {
+        } catch (Throwable $e) {
             return false;
         }
 
