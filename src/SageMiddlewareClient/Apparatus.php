@@ -2,21 +2,23 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class Apparatus extends GenericClient
+use Raorsa\SageMiddlewareClient\components\baseClient;
+
+class Apparatus extends baseClient
 {
     private const BASE = 'apparatus';
 
-    public function list(string $client, bool $cache = true): object|false
+    public function list(string $client, bool $cache = true): array|false
     {
         return $this->callJson(self::BASE . '/' . $client, $cache);
     }
 
-    public function interventions(string $id, bool $cache = true): object|false
+    public function interventions(string $id, bool $cache = true): array|false
     {
         return $this->callJson(self::BASE . '/' . $id . '/interventions', $cache);
     }
 
-    public function integrated(string $id, bool $cache = true): object|false
+    public function integrated(string $id, bool $cache = true): array|false
     {
         return $this->callJson(self::BASE . '/' . $id . '/integrated', $cache);
     }

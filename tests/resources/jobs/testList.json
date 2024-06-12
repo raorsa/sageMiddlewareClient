@@ -1,0 +1,654 @@
+{
+  "2021-231": {
+    "EjercicioTrabajo": "2021",
+    "NumeroTrabajo": "231",
+    "CodigoArticulo": "",
+    "DescripcionArticulo": "",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2021-236": {
+    "EjercicioTrabajo": "2021",
+    "NumeroTrabajo": "236",
+    "CodigoArticulo": "PY20-0101-2B",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-450-6S K750E \u00d883 - BD FRAGA",
+    "NumeroSerieAparato": "1A09076",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2021-251": {
+    "EjercicioTrabajo": "2021",
+    "NumeroTrabajo": "251",
+    "CodigoArticulo": "PY20-0101-3B",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-550-6S L750E \u00d890 - BD FRAGA",
+    "NumeroSerieAparato": "1A10018",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2021-252": {
+    "EjercicioTrabajo": "2021",
+    "NumeroTrabajo": "252",
+    "CodigoArticulo": "OTO6S-DOSREL",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - SE\u00d1AL DOSIFICADOR EST\u00c1NDAR (CONTACTO LIBRE - RELE) CONECTOR 4PIN - TOMA SCHUKO 220V",
+    "NumeroSerieAparato": "1A10018",
+    "Operaciones": [
+      "MONTAJE",
+      "FINAL"
+    ]
+  },
+  "2021-253": {
+    "EjercicioTrabajo": "2021",
+    "NumeroTrabajo": "253",
+    "CodigoArticulo": "OTO6S-BHP100.10616-L",
+    "DescripcionArticulo": "OPCION TOYO 6S - BOQUILLA AUTOMATICA HERZOG BHP1.1 \u00d840X40 95MM \u00d88 M50X3 CON FILTRO(L750E - 90)",
+    "NumeroSerieAparato": "1A10018",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2022-392": {
+    "EjercicioTrabajo": "2022",
+    "NumeroTrabajo": "392",
+    "CodigoArticulo": "",
+    "DescripcionArticulo": "",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2022-577": {
+    "EjercicioTrabajo": "2022",
+    "NumeroTrabajo": "577",
+    "CodigoArticulo": "901022101101",
+    "DescripcionArticulo": "*STOCK - VERIFICAR Y PEM MAQUINA TEDERIC D130 (NS: T01302030)",
+    "NumeroSerieAparato": "T01302030",
+    "Operaciones": [
+      "PEM",
+      "PEM"
+    ]
+  },
+  "2022-578": {
+    "EjercicioTrabajo": "2022",
+    "NumeroTrabajo": "578",
+    "CodigoArticulo": "901022101102",
+    "DescripcionArticulo": "*STOCK - VERIFICAR Y PEM MAQUINA TEDERIC D200 (NS: T02002086)",
+    "NumeroSerieAparato": "T02002086",
+    "Operaciones": [
+      "PEM",
+      "TALLER"
+    ]
+  },
+  "2023-557": {
+    "EjercicioTrabajo": "2023",
+    "NumeroTrabajo": "557",
+    "CodigoArticulo": "PY23-0085-3",
+    "DescripcionArticulo": "MAQUINA DE INYECCION DE PLASTICOS TEDERIC D200 i1100 \u00d855 PVC - NUEVA TERRAIN",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2023-558": {
+    "EjercicioTrabajo": "2023",
+    "NumeroTrabajo": "558",
+    "CodigoArticulo": "PY23-0085-4",
+    "DescripcionArticulo": "MAQUINA DE INYECCION DE PLASTICOS TEDERIC D250 i1500 \u00d860 PVC - NUEVA TERRAIN",
+    "NumeroSerieAparato": "T02502191",
+    "Operaciones": null
+  },
+  "2024-55": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "55",
+    "CodigoArticulo": "901024020500",
+    "DescripcionArticulo": "REVISAR OXIDOS EN MAQUINAS BECTON DICKINSON, S.A. (1A10018 - 1A09076 - 1A09077)",
+    "NumeroSerieAparato": null,
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-90": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "90",
+    "CodigoArticulo": "901024021907",
+    "DescripcionArticulo": "DESMONTAR Y MONTAR PORTAFILTRO TEDERIC D130 - T01302030 PARA RESTITUCION EN GARANT\u00cdA EN PAPELPLAST",
+    "NumeroSerieAparato": null,
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-96": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "96",
+    "CodigoArticulo": "901024022307",
+    "DescripcionArticulo": "TRABAJOS DE REPARACI\u00d3N MOTOR DELTA ECMA-KR221FPS (KR221FPST1402008)",
+    "NumeroSerieAparato": null,
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-162": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "162",
+    "CodigoArticulo": "PY24-0014-2",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-450-6S K750E \u00d875 - GARPEBER",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2024-163": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "163",
+    "CodigoArticulo": "OTO6S-3DOSREL",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - SE\u00d1AL TRIPLE DOSIFICADOR EST\u00c1NDAR (CONTACTO LIBRE - RELE) CONECTOR 4PIN - TOMA SCHUKO 220V",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-164": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "164",
+    "CodigoArticulo": "OTO6S-5V.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - BLOQUE NEUM\u00c1TICO 5 VALVULAS CONFIGURABLES",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-165": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "165",
+    "CodigoArticulo": "OTO6S-1NYV.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - 1 NOYO ADICIONAL A BLOQUE NEUM\u00c1TICO CONFIGURABLE",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-166": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "166",
+    "CodigoArticulo": "OTO6S-BHP100.20240-K",
+    "DescripcionArticulo": "OPCION TOYO 6S - BOQUILLA AUTOMATICA HERZOG BHP1,2 \u00d84 100MM 70\u00ba (K600E - 75)",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-167": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "167",
+    "CodigoArticulo": "OTO6S-5P(32A)-CH",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - ENCHUFE CETAC 5P 400V 32A ADICIONAL PARA PERIF\u00c9RICOS (CENTRALITA HIDR\u00c1ULICA)",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-168": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "168",
+    "CodigoArticulo": "901024042515",
+    "DescripcionArticulo": "ADAPTACI\u00d3N SE\u00d1AL 3 DOSIFICADORES EN M\u00c1QUINA 1A09097 - SI-450-6S GARPEBER",
+    "NumeroSerieAparato": "1A09097",
+    "Operaciones": null
+  },
+  "2024-175": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "175",
+    "CodigoArticulo": "901024050208",
+    "DescripcionArticulo": "EXTRAER Y VOLVER A INSTALAR TARJETAS HMI EN M\u00c1QUINA STOCK 1A09077",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-200": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "200",
+    "CodigoArticulo": "901024051608",
+    "DescripcionArticulo": "DESMONTAR COMPONENTES D210BT (NS: 305190) - MOYAPLAST",
+    "NumeroSerieAparato": "305190",
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-202": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "202",
+    "CodigoArticulo": "PY24-0115",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-350-6S J450E \u00d868 - PLASTEC",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2024-203": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "203",
+    "CodigoArticulo": "OTO6S-CAU.INF.CIERRE",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO - INSTALACI\u00d3N CAUDAL\u00cdMETRO SELLA BAJO CIERRE (LADO NO OPERARIO)",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-204": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "204",
+    "CodigoArticulo": "OTO6S-DOSREL-ADAP.BJ",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - ADAPTACI\u00d3N SE\u00d1AL DOSIFICADOR EST\u00c1NDAR TOYO EUROPE (CONTACTO LIBRE - RELE) CONECTOR 4PIN - TOMA SCHUKO 220V - UNI.INY. B-->J",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-205": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "205",
+    "CodigoArticulo": "OTO6S-5P(32A)-CH",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - ENCHUFE CETAC 5P 400V 32A ADICIONAL PARA PERIF\u00c9RICOS (CENTRALITA HIDR\u00c1ULICA)",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-206": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "206",
+    "CodigoArticulo": "OTO6S-PLEG.PLASTEC",
+    "DescripcionArticulo": "OPCION TOYO 6S - MANIOBRA MOLDE PLEGADOR ESPECIAL *PLASTEC",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-207": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "207",
+    "CodigoArticulo": "OTO6S-INS.DOSIF.",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - INSTALACI\u00d3N DOSIFICADOR MAINTECH EN M\u00c1QUINA TOYO",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-208": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "208",
+    "CodigoArticulo": "OMA-INS.TRD-DOSIF",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - INSTALACI\u00d3N TOLVA TRD MAINTECH EN DOSIFICADOR MAINTECH",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-209": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "209",
+    "CodigoArticulo": "OTO6S-INS.AST-TRD",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO - INSTALACI\u00d3N ALIMENTADOR MAINTECH AST SOBRE TOLVA TRM\/TRD\/TR MAINTECH",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-210": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "210",
+    "CodigoArticulo": "OTO6S-8V.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - BLOQUE NEUM\u00c1TICO 8 VALVULAS MONOESTABLES CONFIGURABLES",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-211": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "211",
+    "CodigoArticulo": "OTO6S-1NYV.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - 1 NOYO ADICIONAL A BLOQUE NEUM\u00c1TICO CONFIGURABLE",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-212": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "212",
+    "CodigoArticulo": "901024051708",
+    "DescripcionArticulo": "MATERIAL INSTALACI\u00d3N CAJA DE ENCHUFES 3x5P(16A)+3x2P(Schuko) EN MAQUINA SI-350-6S - (NS: 1A08075)",
+    "NumeroSerieAparato": "1A08075",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-221": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "221",
+    "CodigoArticulo": "PY24-0038-4",
+    "DescripcionArticulo": "MAQUINA DE INYECCION DE PLASTICOS TEDERIC NEOH 1080II i9500 \u00d8120 - GAYA",
+    "NumeroSerieAparato": "H10800012",
+    "Operaciones": null
+  },
+  "2024-222": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "222",
+    "CodigoArticulo": "OTE-INST.DOSIF.",
+    "DescripcionArticulo": "OPCI\u00d3N TEDERIC - INSTALACI\u00d3N DOSIFICADOR MAINTECH A CUELLO INYECTORA TEDERIC",
+    "NumeroSerieAparato": "H10800012",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-223": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "223",
+    "CodigoArticulo": "OTE-DOSREL",
+    "DescripcionArticulo": "OPCI\u00d3N TEDERIC - SE\u00d1AL DOSIFICADOR EST\u00c1NDAR (CONTACTO LIBRE - RELE) CONECTOR 4PIN - TOMA SCHUKO 220V",
+    "NumeroSerieAparato": "H10800012",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-224": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "224",
+    "CodigoArticulo": "OMA-INS.TRD-DOSIF",
+    "DescripcionArticulo": "OPCI\u00d3N MAINTECH - INSTALACI\u00d3N TOLVA TRD MAINTECH EN DOSIFICADOR MAINTECH",
+    "NumeroSerieAparato": "H10800012",
+    "Operaciones": [
+      "MONTAJE",
+      "FINAL"
+    ]
+  },
+  "2024-225": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "225",
+    "CodigoArticulo": "OMA-INS.ASM-TRD",
+    "DescripcionArticulo": "OPCI\u00d3N MAINTECH - INSTALACI\u00d3N ALIMENTADOR MAINTECH ASM SOBRE TOLVA TRD MAINTECH",
+    "NumeroSerieAparato": "H10800012",
+    "Operaciones": null
+  },
+  "2024-226": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "226",
+    "CodigoArticulo": "901023010316",
+    "DescripcionArticulo": "TRABAJOS SUSTITUCI\u00d3N RET\u00c9N MOTOR CARGA D210 - 305126",
+    "NumeroSerieAparato": null,
+    "Operaciones": [
+      "REPARAR"
+    ]
+  },
+  "2024-229": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "229",
+    "CodigoArticulo": "901024052915",
+    "DescripcionArticulo": "SUSTITUCI\u00d3N FILTRO EN BOQUILLA ESPECIAL BD - SI-450-6S (NS: 1A09076)",
+    "NumeroSerieAparato": "1A09076",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-230": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "230",
+    "CodigoArticulo": "901024052916",
+    "DescripcionArticulo": "SUSTITUCI\u00d3N FILTRO EN BOQUILLA ESPECIAL BD - SI-450-6S (NS: 1A09077)",
+    "NumeroSerieAparato": "1A09077",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-233": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "233",
+    "CodigoArticulo": "PY21-0249-4",
+    "DescripcionArticulo": "ALFAROBOT TITAN TN1700WS-S3 -  WEIDNER",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-234": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "234",
+    "CodigoArticulo": "OAL-S.CINTA+EMERG",
+    "DescripcionArticulo": "OPCION ALFA - SE\u00d1AL CINTA TRANSPORTADORA VIRGINIO - MARCHA CINTA + EMERGENCIA",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-235": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "235",
+    "CodigoArticulo": "PY21-0249-9",
+    "DescripcionArticulo": "MAQUINA DE INYECCION DE PLASTICOS TEDERIC D1050\/I15800 \u00d8150 - WEIDNER",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-236": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "236",
+    "CodigoArticulo": "PY23-0235-2",
+    "DescripcionArticulo": "MAQUINA DE INYECCION DE PLASTICOS TEDERIC NEO T260 i1100 55 - UNFAMED",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-237": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "237",
+    "CodigoArticulo": "PY24-0091-3",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-450-6S JH750E \u00d868 PACK - NG PLASTICS (NS: 1A09103)",
+    "NumeroSerieAparato": "1A09103",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2024-238": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "238",
+    "CodigoArticulo": "901024053010",
+    "DescripcionArticulo": "ADAPTACI\u00d3N MANGUERAS REFRIGERACION MOLDE - CAMBIO A TUBO TEFLON PROTEGIDO EN M\u00c1QUINA SI-450-6S (NS: 1A09103) NG PLASTIC",
+    "NumeroSerieAparato": "1A09103",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-239": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "239",
+    "CodigoArticulo": "OAL-S.CINTA+EMERG",
+    "DescripcionArticulo": "OPCION ALFA - SE\u00d1AL CINTA TRANSPORTADORA VIRGINIO - MARCHA CINTA + EMERGENCIA",
+    "NumeroSerieAparato": "1A09103",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-240": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "240",
+    "CodigoArticulo": "OAL-INS.TOYO-3P10A",
+    "DescripcionArticulo": "OPCI\u00d3N ALFA - MATERIAL PARA INSTALACI\u00d3N ROBOT EN M\u00c1QUINA TOYO (TERMICO 3P - 10A)",
+    "NumeroSerieAparato": "1A09103",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-241": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "241",
+    "CodigoArticulo": "PY24-0091-6",
+    "DescripcionArticulo": "ALFAROBOT REDSTONE R1400WS-S5 NG PLASTICS",
+    "NumeroSerieAparato": "1A09103",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2024-242": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "242",
+    "CodigoArticulo": "PY24-0038-5",
+    "DescripcionArticulo": "ALFAROBOT TITAN T1900WS-S3 - GAYA",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-243": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "243",
+    "CodigoArticulo": "OAL-INS.TEDERIC-10A",
+    "DescripcionArticulo": "OPCI\u00d3N ALFA - MATERIAL PARA INSTALACI\u00d3N ROBOT EN M\u00c1QUINA TEDERIC (TERMICO 3P - 10A)",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-244": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "244",
+    "CodigoArticulo": "OAL-S.CINTA+EMERG",
+    "DescripcionArticulo": "OPCION ALFA - SE\u00d1AL CINTA TRANSPORTADORA VIRGINIO - MARCHA CINTA + EMERGENCIA",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  },
+  "2024-246": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "246",
+    "CodigoArticulo": "901024053115",
+    "DescripcionArticulo": "PRUEBAS MOLDE 'MAIER' EN M\u00c1QUINA SI-1000-6S (NS: 1A15013)",
+    "NumeroSerieAparato": "1A15013",
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-249": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "249",
+    "CodigoArticulo": "901024060311",
+    "DescripcionArticulo": "CONECTAR, PROBAR Y LIMPIAR MOLINO PULIAN A200 (NS: 23A0010) CON ENRIQUE - PROYECTO ALEGRE",
+    "NumeroSerieAparato": "23A0010",
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-250": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "250",
+    "CodigoArticulo": "901024060410",
+    "DescripcionArticulo": "DESMONTAR Y MONTAR BOMBA DE LUBRICACI\u00d3N DE GARASA YGL-G12 DE ROBOT R900WS-S3 (NS: DRCDL020)",
+    "NumeroSerieAparato": "DRCDL020",
+    "Operaciones": [
+      "TALLER"
+    ]
+  },
+  "2024-251": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "251",
+    "CodigoArticulo": "PY23-0284-7",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-280-6S JH600E \u00d868 - PLASTICMAN (NS: 1A07112)",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "PEM"
+    ]
+  },
+  "2024-252": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "252",
+    "CodigoArticulo": "OTO6S-CAU.INF.CIERRE",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO - INSTALACI\u00d3N CAUDAL\u00cdMETRO SELLA BAJO CIERRE (LADO NO OPERARIO)",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-253": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "253",
+    "CodigoArticulo": "901024060316",
+    "DescripcionArticulo": "TRABAJOS DE DESMONTAJE LIMPIEZA Y EMBALADO DE CONJUNTO PLASTIFICADOR D60 CON ACCESORIOS E M\u00c1QUINA (NS: 1A07112) - PLASTICMAN",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "DESMONTAR"
+    ]
+  },
+  "2024-254": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "254",
+    "CodigoArticulo": "OTO6S-5P(32A)-CH",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - ENCHUFE CETAC 5P 400V 32A ADICIONAL PARA PERIF\u00c9RICOS (CENTRALITA HIDR\u00c1ULICA)",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-255": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "255",
+    "CodigoArticulo": "901024060318",
+    "DescripcionArticulo": "INSTALACI\u00d3N 2 CAJAS ENCHUFES 2xCETAC 5P\/16A + 2xSCHUKO (1 EN LADO CIERRE - 1 EN LADO INYECCI\u00d3N)  EN MAQUINA SI-280 (NS: 1A07112) - PLASTICMAN",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-256": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "256",
+    "CodigoArticulo": "OTO6S-DOSREL-ADAP.BJ",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - ADAPTACI\u00d3N SE\u00d1AL DOSIFICADOR EST\u00c1NDAR TOYO EUROPE (CONTACTO LIBRE - RELE) CONECTOR 4PIN - TOMA SCHUKO 220V - UNI.INY. B-->J",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-257": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "257",
+    "CodigoArticulo": "OTO6S-5V.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - BLOQUE NEUM\u00c1TICO 5 VALVULAS CONFIGURABLES",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-258": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "258",
+    "CodigoArticulo": "OTO6S-1NYV.OP",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - 1 NOYO ADICIONAL A BLOQUE NEUM\u00c1TICO CONFIGURABLE",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-259": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "259",
+    "CodigoArticulo": "OTO6S-VGFESTO",
+    "DescripcionArticulo": "OPCI\u00d3N TOYO 6S - VALVE GATE (FESTO)",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-260": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "260",
+    "CodigoArticulo": "901024060415",
+    "DescripcionArticulo": "MONTAJE DEL CONJUNTO PLASTIFICADOR D68 CON ACCESORIOS E M\u00c1QUINA (NS: 1A07112) - PLASTICMAN",
+    "NumeroSerieAparato": "1A07112",
+    "Operaciones": [
+      "MONTAJE"
+    ]
+  },
+  "2024-261": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "261",
+    "CodigoArticulo": "901023110900",
+    "DescripcionArticulo": "VERIFICAR CINTA VIRGINIO CB6 (NS: 39420\/24 )",
+    "NumeroSerieAparato": "39420-24",
+    "Operaciones": [
+      "PER"
+    ]
+  },
+  "2024-262": {
+    "EjercicioTrabajo": "2024",
+    "NumeroTrabajo": "262",
+    "CodigoArticulo": "PY23-0284-3",
+    "DescripcionArticulo": "M\u00c1QUINA INYECCI\u00d3N PL\u00c1STICOS TOTALMENTE EL\u00c9CTRICA \"TOYO\" SI-230-6S H370E \u00d860 - PLASTICMAN",
+    "NumeroSerieAparato": null,
+    "Operaciones": null
+  }
+}

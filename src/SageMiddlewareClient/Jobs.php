@@ -2,7 +2,9 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class Jobs extends GenericClient
+use Raorsa\SageMiddlewareClient\components\baseClient;
+
+class Jobs extends baseClient
 {
     private const BASE = 'jobs';
 
@@ -33,10 +35,10 @@ class Jobs extends GenericClient
 
     public function getSN(string $id, bool $cache = true): string|false
     {
-        return json_decode($this->call(self::BASE . '/jobsn/' . $id, $cache));
+        return $this->callJson(self::BASE . '/jobsn/' . $id, $cache);
     }
 
-    public function importLog(string $date, bool $cache = true): object|false
+    public function importLog(string $date, bool $cache = true): array|false
     {
         return $this->callJson(self::BASE . '/import/' . $date, $cache);
     }

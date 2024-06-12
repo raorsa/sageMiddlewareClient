@@ -2,7 +2,9 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class Invoices extends GenericClient
+use Raorsa\SageMiddlewareClient\components\baseClient;
+
+class Invoices extends baseClient
 {
     private const BASE = 'invoice';
 

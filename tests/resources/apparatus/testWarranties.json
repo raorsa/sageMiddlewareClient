@@ -1,0 +1,9 @@
+{
+  "none": "Sin Garantia",
+  "half": "6 meses",
+  "one": "12 meses",
+  "one_half": "18 meses",
+  "double": "24 meses",
+  "triple": "36 meses",
+  "custom": "Personalizado"
+}

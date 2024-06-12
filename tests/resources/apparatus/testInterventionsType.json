@@ -1,0 +1,9 @@
+{
+  "charge": "Cargo",
+  "warranty": "Garantia",
+  "fabrication": "Montaje",
+  "commissioning": "PEM en cliente",
+  "scheduled": "Mantenimiento programado",
+  "telephonic": "Telef\u00f3nico\/Mail",
+  "not_set": "Sin definir"
+}

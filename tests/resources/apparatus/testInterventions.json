@@ -1,0 +1,440 @@
+[
+  {
+    "id": 6902,
+    "delivery_note_number": "Telefonico",
+    "other_operators": "Gregorio",
+    "type": "telephonic",
+    "symptoms": "El cliente llama preguntando si puede montar un molde de 803mm cuando la a pertura de espesor maximo es de 800mm.",
+    "causes": "Ninguna. Solo requiereinformavion tecnica.",
+    "description": "Se le indica al cliente que si que es posible montar el molde, ya que cuando se hace el movimiento automatico de espesor de molde, siempre abre entre 5 y 10 mm.\r\nSi no le cabe el molde nos llamara para poder incrementar el espesor a 900mm.",
+    "cycles": null,
+    "hours": null,
+    "user_id": 3,
+    "apparatu_id": 270,
+    "date": "2024-05-07",
+    "vpem": 0,
+    "created_at": "2024-05-07T15:55:15.000000Z",
+    "updated_at": "2024-05-07T15:55:15.000000Z",
+    "checksum": "609cc2319e707e715023889f12903540",
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6561,
+    "delivery_note_number": "106036",
+    "other_operators": null,
+    "type": "charge",
+    "symptoms": "No saca presión la bomba de la centralita. \r\nZ12HPCTRRPI170020 // PRPI-17-09/840",
+    "causes": "Centralita trabajando sin agua de refrigeración del aceite.",
+    "description": "Se monta bomba procedente de la centralita a Z12HPCTRRPI190013 // PRPI-19-09/906.",
+    "cycles": 14122845,
+    "hours": 40680,
+    "user_id": 4,
+    "apparatu_id": 270,
+    "date": "2024-02-23",
+    "vpem": 0,
+    "created_at": "2024-02-26T06:20:07.000000Z",
+    "updated_at": "2024-02-26T06:23:30.000000Z",
+    "checksum": null,
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3666,
+    "delivery_note_number": "105148",
+    "other_operators": null,
+    "type": "charge",
+    "symptoms": "El material se le va hacia atrás, se observa como los granos de plástico salen del cuello de la tolva cuando inyecta.",
+    "causes": "Posible atasco o degradación de material en la puntera.",
+    "description": "En esta segunda intervención se monta la puntera antigua.<br/>\nSe repasan tornillos de cabezal y cambian por unos nuevos.",
+    "cycles": 10648437,
+    "hours": 30096,
+    "user_id": 4,
+    "apparatu_id": 270,
+    "date": "2022-05-17",
+    "vpem": 0,
+    "created_at": "2024-01-14T21:50:40.000000Z",
+    "updated_at": "2024-01-14T21:50:40.000000Z",
+    "checksum": null,
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3634,
+    "delivery_note_number": "105100",
+    "other_operators": null,
+    "type": "not_set",
+    "symptoms": "la maquina  al inyectar hecha el material hacia atrás",
+    "causes": "desconocidas",
+    "description": "se desmonta cabezal para ver la puntera, los tornillos van dusrisimos y hay tres de ellos gripados  tras varias horas se consiguen extraer,  la puntera , valvula y anillo salen enteros , se le ve un leve gripaje en la valvula y en la camara del plastificador, pero no parece ser la causa de un problema tan evidente, el cliente decide volver a montar puentera vieja , pero antes hay que repasar los mecanizados del cabezal en frio ya que en caliente se coge el macho, queda pendiente repasar mecanizados  montar el conjunto y probar.",
+    "cycles": 10648419,
+    "hours": 30093,
+    "user_id": 10,
+    "apparatu_id": 270,
+    "date": "2022-05-16",
+    "vpem": 0,
+    "created_at": "2024-01-14T21:50:40.000000Z",
+    "updated_at": "2024-01-14T21:50:40.000000Z",
+    "checksum": null,
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 1843,
+    "delivery_note_number": "104429",
+    "other_operators": null,
+    "type": "warranty",
+    "symptoms": "al cerra la maquina hace ruido a causa de que los flejes del plato movil estan marcados por los rodillos",
+    "causes": "Posible mal montaje de los rodillos de fabrica.",
+    "description": "Desmontar los flejes y los rodilos de apoyo del plato movil y sustituirlos por unos nuevos. Se ajusta el apoyo de los rodillos al fleje.",
+    "cycles": 7401391,
+    "hours": 20874,
+    "user_id": 3,
+    "apparatu_id": 270,
+    "date": "2021-02-01",
+    "vpem": 0,
+    "created_at": "2024-01-14T21:50:30.000000Z",
+    "updated_at": "2024-01-14T21:50:30.000000Z",
+    "checksum": null,
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 810,
+    "delivery_note_number": "103412",
+    "other_operators": null,
+    "type": "not_set",
+    "symptoms": "Al trabajar con carro móvil, en la segunda inyectada se queda la máquina parada y no termina de ajustar el avance del carro.",
+    "causes": "Por lo visto hay que ajustar el NZ RE-TOUCHING  a ON para que funciones el carro correctamente.",
+    "description": "Se establece este campo a On y la máquina se pone a trabajar.",
+    "cycles": 0,
+    "hours": 0,
+    "user_id": 4,
+    "apparatu_id": 270,
+    "date": "2019-11-27",
+    "vpem": 0,
+    "created_at": "2024-01-14T21:50:25.000000Z",
+    "updated_at": "2024-01-14T21:50:25.000000Z",
+    "checksum": null,
+    "client": {
+      "id": 514,
+      "name": "INYECTADOS PLASTICMAN, S.L.",
+      "interventions": 4,
+      "created_at": "2024-01-14T21:49:29.000000Z",
+      "updated_at": "2024-02-26T07:00:11.000000Z",
+      "sage_id": null
+    },
+    "apparatu": {
+      "id": 270,
+      "serial_number": "1846080",
+      "model": "SI-450-6 K750 Ø76",
+      "machine_number": null,
+      "file": "dataSheet/1846080-SI-450-6 K750 Ø76.pdf",
+      "observations": "CENTRALITA:   Z12HPCTRRPI170020 //  No. PRPI-17-09/840",
+      "warranty": "double",
+      "type_id": 43,
+      "brand_id": 30,
+      "location_id": 514,
+      "manufactured_at": "2017-01-10",
+      "received_at": "2017-01-12",
+      "commissioning_at": "2018-02-05",
+      "warranty_expiration_at": "2021-02-05",
+      "related": null,
+      "interventions_count": 1,
+      "created_at": "2024-01-14T21:49:51.000000Z",
+      "updated_at": "2024-04-23T12:33:59.000000Z",
+      "deleted_at": null,
+      "brand": {
+        "id": 30,
+        "name": "Toyo",
+        "interventions": 297,
+        "created_at": "2024-01-14T21:49:28.000000Z",
+        "updated_at": "2024-06-08T22:00:04.000000Z",
+        "types": [
+          {
+            "id": 43,
+            "name": "Máquina de inyección",
+            "interventions": 519,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-10T05:00:04.000000Z",
+            "pivot": {
+              "brand_id": 30,
+              "type_id": 43,
+              "model_regex": "/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(ø|Ø|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$/i",
+              "model_replace": "Si-${1}-${2} ${3} Ø${5} ${7}",
+              "model_mask": "Si-00[000]-*[**] 0000[00] Ø00[0] [aaaa]",
+              "model_manual": "<brand>/<manufactured_at?-:2>/<model>.pdf",
+              "model_sheet": "data_sheet/<brand>/<model>.pdf",
+              "model_ce": "<brand>/<model>.pdf"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

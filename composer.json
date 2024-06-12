@@ -7,6 +7,11 @@
       "Raorsa\\SageMiddlewareClient\\": "src/SageMiddlewareClient"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Traits\\": "tests/Traits"
+    }
+  },
   "authors": [
     {
       "name": "vampirejsv",

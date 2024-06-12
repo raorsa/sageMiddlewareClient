@@ -1,12 +1,13 @@
 <?php
 
-namespace Raorsa\SageMiddlewareClient;
+namespace Raorsa\SageMiddlewareClient\wrappers;
 
 use Monolog\Handler\StreamHandler;
 use Monolog\Level;
 use Monolog\Logger;
+use function Raorsa\SageMiddlewareClient\storage_path;
 
-class logWrapper implements LogWrapperInterface
+class log
 {
 
     private string $log_dir;

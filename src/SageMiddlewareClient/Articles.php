@@ -2,7 +2,9 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class Articles extends GenericClient
+use Raorsa\SageMiddlewareClient\components\baseClient;
+
+class Articles extends baseClient
 {
     private const BASE = 'articles';
     private const SCREWTIP = 'screw-tip';

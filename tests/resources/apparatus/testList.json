@@ -1,0 +1,1790 @@
+[
+  {
+    "id": 19,
+    "serial_number": "T3008-0206",
+    "model": "D80\/i210",
+    "machine_number": null,
+    "file": "dataSheet\/T3008-0206-D80-i210.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 29,
+    "location_id": 567,
+    "manufactured_at": "2018-01-03",
+    "received_at": "2018-01-06",
+    "commissioning_at": "2019-06-21",
+    "warranty_expiration_at": "2019-06-21",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:18.000000Z",
+    "updated_at": "2024-01-14T21:50:18.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 29,
+      "name": "Tederic",
+      "interventions": 62,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T16:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 29,
+            "type_id": 43,
+            "model_regex": "\/(D|NEO)[-|\\s]?(H|T|E)?(II|2)?(-|\\s|\\\/)?(\\d{2,5})(-|\\s|\\\/)*(i\\s?\\d{3,5}[A|B|C|D]?|M\\s?\\d{3,4}|J[I|1]\\s?\\d{4,6}|E\\d{3,4}C)(-|\\s|\\\/)*(\u00f8|\u00d8|d)?(-|\\s|\\\/)*(\\d{2,3})\/i",
+            "model_replace": "${1}${2}${3}${4}${5} ${7} \u00d8${11}",
+            "model_mask": "a[aaa][0]00[000] a000[00]a[0][000000] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 100,
+    "serial_number": "555153",
+    "model": "D550-655",
+    "machine_number": null,
+    "file": "dataSheet\/555153-D550-655.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2014-01-05",
+    "received_at": "2014-01-06",
+    "commissioning_at": "2014-06-26",
+    "warranty_expiration_at": "2016-06-26",
+    "related": null,
+    "interventions_count": 9,
+    "created_at": "2024-01-14T21:50:11.000000Z",
+    "updated_at": "2024-06-08T22:00:02.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 101,
+    "serial_number": "305190",
+    "model": "D210",
+    "machine_number": null,
+    "file": "dataSheet\/305190-D210.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2005-01-09",
+    "received_at": "2005-01-10",
+    "commissioning_at": "2005-10-25",
+    "warranty_expiration_at": "2006-10-25",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:05.000000Z",
+    "updated_at": "2024-01-14T21:50:05.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "serial_number": "305250",
+    "model": "BT215ACC",
+    "machine_number": null,
+    "file": "dataSheet\/305250-BT215ACC.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2008-01-04",
+    "received_at": "2008-01-05",
+    "commissioning_at": "2008-06-04",
+    "warranty_expiration_at": "2010-06-04",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:05.000000Z",
+    "updated_at": "2024-01-14T21:50:05.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 151,
+    "serial_number": "1843064",
+    "model": "Si-230-6 H450D \u00d850 ",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2018-01-12",
+    "received_at": "2019-01-01",
+    "commissioning_at": "2019-02-08",
+    "warranty_expiration_at": "2021-02-08",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:49.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 254,
+    "serial_number": "1840018",
+    "model": "Si-100-6 F200D \u00d840 ",
+    "machine_number": null,
+    "file": "dataSheet\/1840018-SI-100-6 F200D  \u00d840.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2017-01-08",
+    "received_at": "2017-01-12",
+    "commissioning_at": "2018-04-17",
+    "warranty_expiration_at": "2020-04-17",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:48.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 255,
+    "serial_number": "1684015",
+    "model": "Si-350-V J450C \u00d868 ",
+    "machine_number": null,
+    "file": "dataSheet\/1684015-SI-350-V J450C  \u00d868.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2013-01-04",
+    "received_at": "2013-01-06",
+    "commissioning_at": "2015-06-24",
+    "warranty_expiration_at": "2015-06-24",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:46.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 256,
+    "serial_number": "1684016",
+    "model": "Si-350-V JH750C \u00d868 ",
+    "machine_number": null,
+    "file": "dataSheet\/1684016-SI-350 V JH750C  \u00d868.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2013-01-07",
+    "received_at": "2013-01-09",
+    "commissioning_at": "2014-04-04",
+    "warranty_expiration_at": "2016-04-04",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:46.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 257,
+    "serial_number": "1845035",
+    "model": "Si-350-6 JH750D \u00d868 ",
+    "machine_number": null,
+    "file": "dataSheet\/1845035-SI-350-6 JH750D  \u00d868.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2016-01-10",
+    "received_at": "2017-01-01",
+    "commissioning_at": "2017-01-27",
+    "warranty_expiration_at": "2019-01-27",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:50.000000Z",
+    "updated_at": "2024-01-14T21:49:50.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 258,
+    "serial_number": "1846023",
+    "model": "Si-450-6 K600D \u00d883 ",
+    "machine_number": null,
+    "file": "dataSheet\/1846023-SI450-6 K600D  \u00d883.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2015-01-06",
+    "received_at": "2015-01-09",
+    "commissioning_at": "2015-09-16",
+    "warranty_expiration_at": "2017-09-16",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:50.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 259,
+    "serial_number": "1846087",
+    "model": "Si-450-6 K750D \u00d883 ",
+    "machine_number": null,
+    "file": "dataSheet\/1846087-SI-450-6 K750D  \u00d883.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2017-01-09",
+    "received_at": "2017-01-02",
+    "commissioning_at": "2018-03-07",
+    "warranty_expiration_at": "2020-03-07",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:51.000000Z",
+    "updated_at": "2024-01-14T21:49:51.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 260,
+    "serial_number": "1847013",
+    "model": "Si-680-6 M750D \u00d8100 ",
+    "machine_number": null,
+    "file": "dataSheet\/1847013-SI-680-6 M750D  \u00d8100.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2017-01-03",
+    "received_at": "2017-01-05",
+    "commissioning_at": "2017-05-15",
+    "warranty_expiration_at": "2019-05-15",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:51.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 309,
+    "serial_number": "E655030",
+    "model": "E655",
+    "machine_number": null,
+    "file": "dataSheet\/E655030-E655.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2001-01-05",
+    "received_at": "2001-01-06",
+    "commissioning_at": "2001-07-01",
+    "warranty_expiration_at": "2002-07-01",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:15.000000Z",
+    "updated_at": "2024-01-14T21:50:15.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 328,
+    "serial_number": "160411",
+    "model": "TN1300W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/160411-TN1300WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2016-01-07",
+    "received_at": "2016-01-08",
+    "commissioning_at": "2017-11-11",
+    "warranty_expiration_at": "2017-11-11",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:45.000000Z",
+    "updated_at": "2024-01-14T21:49:45.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 376,
+    "serial_number": "G855083",
+    "model": "G855",
+    "machine_number": null,
+    "file": "dataSheet\/G855083-G855.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2016-01-01",
+    "received_at": "2016-01-03",
+    "commissioning_at": "2016-02-29",
+    "warranty_expiration_at": "2018-02-28",
+    "related": null,
+    "interventions_count": 3,
+    "created_at": "2024-01-14T21:50:15.000000Z",
+    "updated_at": "2024-04-23T12:33:59.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 388,
+    "serial_number": "160707",
+    "model": "TN1300W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/160707-TN1300WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2016-01-09",
+    "received_at": "2016-01-10",
+    "commissioning_at": "2017-05-15",
+    "warranty_expiration_at": "2018-05-15",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:46.000000Z",
+    "updated_at": "2024-01-14T21:49:46.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 394,
+    "serial_number": "125319",
+    "model": "BT85 ACC - 40",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2004-01-08",
+    "received_at": "2004-01-09",
+    "commissioning_at": "2004-10-15",
+    "warranty_expiration_at": "2005-10-15",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:40.000000Z",
+    "updated_at": "2024-01-14T21:49:40.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 501,
+    "serial_number": "205088",
+    "model": "D140 ACC",
+    "machine_number": null,
+    "file": "dataSheet\/205088-D140 ACC.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "1999-01-03",
+    "received_at": "1999-01-04",
+    "commissioning_at": "2000-05-01",
+    "warranty_expiration_at": "2000-05-01",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:56.000000Z",
+    "updated_at": "2024-01-14T21:49:56.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 591,
+    "serial_number": "D1016-0486",
+    "model": "D160\/M640F",
+    "machine_number": null,
+    "file": "dataSheet\/D1016-0486-D160-M640F.pdf",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 29,
+    "location_id": 567,
+    "manufactured_at": "2016-01-05",
+    "received_at": "2016-01-06",
+    "commissioning_at": "2018-09-01",
+    "warranty_expiration_at": "2018-09-01",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:14.000000Z",
+    "updated_at": "2024-01-14T21:50:14.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 29,
+      "name": "Tederic",
+      "interventions": 62,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T16:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 29,
+            "type_id": 43,
+            "model_regex": "\/(D|NEO)[-|\\s]?(H|T|E)?(II|2)?(-|\\s|\\\/)?(\\d{2,5})(-|\\s|\\\/)*(i\\s?\\d{3,5}[A|B|C|D]?|M\\s?\\d{3,4}|J[I|1]\\s?\\d{4,6}|E\\d{3,4}C)(-|\\s|\\\/)*(\u00f8|\u00d8|d)?(-|\\s|\\\/)*(\\d{2,3})\/i",
+            "model_replace": "${1}${2}${3}${4}${5} ${7} \u00d8${11}",
+            "model_mask": "a[aaa][0]00[000] a000[00]a[0][000000] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 592,
+    "serial_number": "D1038-0032",
+    "model": "D380-MIg00F",
+    "machine_number": null,
+    "file": "dataSheet\/D1038-0032-D380-MIg00F.pdf",
+    "observations": null,
+    "warranty": "one_half",
+    "type_id": 43,
+    "brand_id": 29,
+    "location_id": 567,
+    "manufactured_at": "2016-01-08",
+    "received_at": "2016-01-09",
+    "commissioning_at": "2018-05-01",
+    "warranty_expiration_at": "2018-05-01",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:14.000000Z",
+    "updated_at": "2024-01-14T21:50:14.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 29,
+      "name": "Tederic",
+      "interventions": 62,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T16:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 29,
+            "type_id": 43,
+            "model_regex": "\/(D|NEO)[-|\\s]?(H|T|E)?(II|2)?(-|\\s|\\\/)?(\\d{2,5})(-|\\s|\\\/)*(i\\s?\\d{3,5}[A|B|C|D]?|M\\s?\\d{3,4}|J[I|1]\\s?\\d{4,6}|E\\d{3,4}C)(-|\\s|\\\/)*(\u00f8|\u00d8|d)?(-|\\s|\\\/)*(\\d{2,3})\/i",
+            "model_replace": "${1}${2}${3}${4}${5} ${7} \u00d8${11}",
+            "model_mask": "a[aaa][0]00[000] a000[00]a[0][000000] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 621,
+    "serial_number": "M1270043",
+    "model": "SERIE OTTO - SANDRETO",
+    "machine_number": null,
+    "file": "dataSheet\/M1270043-SERIE OTTO - SANDRETO.pdf",
+    "observations": null,
+    "warranty": "none",
+    "type_id": 43,
+    "brand_id": 25,
+    "location_id": 567,
+    "manufactured_at": null,
+    "received_at": null,
+    "commissioning_at": null,
+    "warranty_expiration_at": null,
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:16.000000Z",
+    "updated_at": "2024-01-14T21:50:16.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 25,
+      "name": "Otras marcas (Especificar en modelo)",
+      "interventions": 23,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-05-30T05:00:04.000000Z",
+      "types": []
+    }
+  },
+  {
+    "id": 1246,
+    "serial_number": "100703",
+    "model": "R900WS- S3",
+    "machine_number": null,
+    "file": "dataSheet\/100703-R900WS- S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2010-01-07",
+    "received_at": "2010-01-09",
+    "commissioning_at": "2011-10-06",
+    "warranty_expiration_at": "2011-10-06",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:37.000000Z",
+    "updated_at": "2024-01-14T21:49:37.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1247,
+    "serial_number": "MRG1711035",
+    "model": "R 900WS- S3",
+    "machine_number": null,
+    "file": "dataSheet\/MRG1711035-R 900WS- S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2016-12-31",
+    "received_at": "2018-01-02",
+    "commissioning_at": "2018-03-23",
+    "warranty_expiration_at": "2019-03-23",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:17.000000Z",
+    "updated_at": "2024-01-14T21:50:17.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1249,
+    "serial_number": "150703",
+    "model": "T1300W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/150703-T1300WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2015-01-08",
+    "received_at": "2015-01-10",
+    "commissioning_at": "2016-10-27",
+    "warranty_expiration_at": "2016-10-27",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:43.000000Z",
+    "updated_at": "2024-01-14T21:49:43.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1252,
+    "serial_number": "160706",
+    "model": "R1200W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/160706-R1200WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2016-01-09",
+    "received_at": "2016-01-10",
+    "commissioning_at": "2017-11-02",
+    "warranty_expiration_at": "2017-11-02",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:46.000000Z",
+    "updated_at": "2024-01-14T21:49:46.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1253,
+    "serial_number": "150611",
+    "model": "R1200W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/150611-R1200WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2015-01-08",
+    "received_at": "2015-01-09",
+    "commissioning_at": "2017-04-27",
+    "warranty_expiration_at": "2017-04-27",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:43.000000Z",
+    "updated_at": "2024-01-14T21:49:43.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1254,
+    "serial_number": "P11991",
+    "model": "- SEPRO",
+    "machine_number": null,
+    "file": "dataSheet\/P11991-- SEPRO.pdf",
+    "observations": null,
+    "warranty": "none",
+    "type_id": 47,
+    "brand_id": 25,
+    "location_id": 567,
+    "manufactured_at": null,
+    "received_at": null,
+    "commissioning_at": null,
+    "warranty_expiration_at": null,
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:50:17.000000Z",
+    "updated_at": "2024-01-14T21:50:17.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 25,
+      "name": "Otras marcas (Especificar en modelo)",
+      "interventions": 23,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-05-30T05:00:04.000000Z",
+      "types": []
+    }
+  },
+  {
+    "id": 1255,
+    "serial_number": "140202",
+    "model": "T1700W-S3",
+    "machine_number": null,
+    "file": "dataSheet\/140202-T1700WS-S3.pdf",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 47,
+    "brand_id": 17,
+    "location_id": 567,
+    "manufactured_at": "2014-01-05",
+    "received_at": "2014-01-06",
+    "commissioning_at": "2015-06-26",
+    "warranty_expiration_at": "2015-06-26",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:41.000000Z",
+    "updated_at": "2024-01-14T21:49:41.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 17,
+      "name": "Alfa Robot",
+      "interventions": 63,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-06T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 47,
+          "name": "Robot",
+          "interventions": 64,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-06T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 17,
+            "type_id": 47,
+            "model_regex": "\/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$\/i",
+            "model_replace": "$1$2$3-$4$6",
+            "model_mask": "a[a]000[0][aa]0",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1513,
+    "serial_number": "1849005",
+    "model": "Si-950-6 N1100 \u00d8120 ",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-27",
+    "received_at": "0006-01-27",
+    "commissioning_at": "2019-06-28",
+    "warranty_expiration_at": "2021-06-28",
+    "related": null,
+    "interventions_count": 2,
+    "created_at": "2024-01-14T21:49:52.000000Z",
+    "updated_at": "2024-04-23T12:34:00.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 1532,
+    "serial_number": "1A07003",
+    "model": "Si-280-6S JH600E \u00d860 ",
+    "machine_number": null,
+    "file": "",
+    "observations": "Sevida junto tolva inos 125Litros, Dosificador LDE2 \u00ba16x16 (19LDM00021)",
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-03",
+    "received_at": "2019-01-07",
+    "commissioning_at": "2019-07-11",
+    "warranty_expiration_at": "2021-07-11",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:54.000000Z",
+    "updated_at": "2024-04-23T12:34:00.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 2195,
+    "serial_number": "1A08009",
+    "model": "Si-350-6S JH750E \u00d868 ",
+    "machine_number": null,
+    "file": "",
+    "observations": "MINITOLVA TRD30 (19TRM00100)_x000D_\nDOSIFICADOR LDE \u00d816x16 (19LDM00074)_x000D_\nTOLVA RECEPTORA CTI50 (19CTI00164)",
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-08",
+    "received_at": "2019-01-10",
+    "commissioning_at": "2020-02-11",
+    "warranty_expiration_at": "2022-02-11",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:54.000000Z",
+    "updated_at": "2024-04-23T12:34:00.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 2463,
+    "serial_number": "1A09023",
+    "model": "Si-450-6S K750E",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-12",
+    "received_at": "2019-12-31",
+    "commissioning_at": "2021-07-15",
+    "warranty_expiration_at": "2023-07-15",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:55.000000Z",
+    "updated_at": "2024-01-14T21:49:55.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 2464,
+    "serial_number": "1A05003",
+    "model": "Si-180-6S H300E",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-09",
+    "received_at": "2020-01-12",
+    "commissioning_at": "2020-11-30",
+    "warranty_expiration_at": "2022-11-30",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:54.000000Z",
+    "updated_at": "2024-01-14T21:49:54.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 2594,
+    "serial_number": "1A07037",
+    "model": "Si-280-6S JH600E \u00d860 ",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2019-01-12",
+    "received_at": "2021-01-03",
+    "commissioning_at": "2021-06-11",
+    "warranty_expiration_at": "2023-06-11",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:54.000000Z",
+    "updated_at": "2024-01-14T21:49:54.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3089,
+    "serial_number": "600034",
+    "model": "TF600-800 INJ \u00d895",
+    "machine_number": null,
+    "file": "dataSheet\/600034-TF600-800 INJ \u00d895.pdf",
+    "observations": "PENDINTE ENTREGA OPCION CONTROL 8 ZONAS DE CALEFACCION",
+    "warranty": "one",
+    "type_id": 43,
+    "brand_id": 20,
+    "location_id": 567,
+    "manufactured_at": "2022-01-02",
+    "received_at": "2022-01-04",
+    "commissioning_at": "2022-06-01",
+    "warranty_expiration_at": "2023-06-01",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:50:12.000000Z",
+    "updated_at": "2024-04-23T12:34:01.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 20,
+      "name": "EuroInj",
+      "interventions": 142,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-10T05:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 20,
+            "type_id": 43,
+            "model_regex": "\/(D|G|E|BT|TF)[-|\\s]*(\\d{2,4})(\\\/\\d{2,4})?[-|\\s]?[ACC]?(-|\\s)*(\u00f8|\u00d8)(\\d{2,3})\/i",
+            "model_replace": "${1}${2} \u00d8${6}",
+            "model_mask": "a[a]00[00][aaa] \u00d800[0]",
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3140,
+    "serial_number": "1A07081",
+    "model": "Si-280-6S JH600E \u00d860 ",
+    "machine_number": "57",
+    "file": "",
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2022-01-04",
+    "received_at": "2021-12-31",
+    "commissioning_at": "2022-09-09",
+    "warranty_expiration_at": "2024-09-09",
+    "related": null,
+    "interventions_count": 1,
+    "created_at": "2024-01-14T21:49:54.000000Z",
+    "updated_at": "2024-04-23T12:34:01.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3469,
+    "serial_number": "1A10021",
+    "model": "SI-550-6S\/L750E \u00d890",
+    "machine_number": null,
+    "file": "",
+    "observations": "MODIFICAR GARANTIA SEG\u00daN FECHA DE ENTREGA",
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2023-01-06",
+    "received_at": "2023-01-05",
+    "commissioning_at": "2023-07-26",
+    "warranty_expiration_at": "2025-08-05",
+    "related": null,
+    "interventions_count": 2,
+    "created_at": "2024-01-14T21:49:55.000000Z",
+    "updated_at": "2024-04-23T12:34:02.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3777,
+    "serial_number": "1A06071",
+    "model": "Si-230-6S H370E \u00d855 ",
+    "machine_number": null,
+    "file": null,
+    "observations": null,
+    "warranty": "double",
+    "type_id": 43,
+    "brand_id": 30,
+    "location_id": 567,
+    "manufactured_at": "2023-10-19",
+    "received_at": null,
+    "commissioning_at": "2024-05-05",
+    "warranty_expiration_at": "2026-05-05",
+    "related": null,
+    "interventions_count": 0,
+    "created_at": "2024-04-16T14:35:48.000000Z",
+    "updated_at": "2024-04-23T10:06:23.000000Z",
+    "deleted_at": null,
+    "laravel_through_key": 567,
+    "brand": {
+      "id": 30,
+      "name": "Toyo",
+      "interventions": 297,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-08T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 43,
+          "name": "M\u00e1quina de inyecci\u00f3n",
+          "interventions": 519,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-10T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 30,
+            "type_id": 43,
+            "model_regex": "\/^.{2}-?(\\d{2,5})[\\s|-]?+(III|IV|V|6|6s)[\\s|-]+(\\w{4,7})[\\s|-]+(\u00f8|\u00d8|d)?\\s?(\\d{2,3})\\w?([\\s|-]+(PACK))?$\/i",
+            "model_replace": "Si-${1}-${2} ${3} \u00d8${5} ${7}",
+            "model_mask": "Si-00[000]-*[**] 0000[00] \u00d800[0] [aaaa]",
+            "model_manual": "<brand>\/<manufactured_at?-:2>\/<model>.pdf",
+            "model_sheet": "data_sheet\/<brand>\/<model>.pdf",
+            "model_ce": "<brand>\/<model>.pdf"
+          }
+        }
+      ]
+    }
+  }
+]

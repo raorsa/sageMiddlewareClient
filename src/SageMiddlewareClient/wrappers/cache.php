@@ -1,10 +1,10 @@
 <?php
 
-namespace Raorsa\SageMiddlewareClient;
+namespace Raorsa\SageMiddlewareClient\wrappers;
 
 use Raorsa\RWFileCache\RWFileCache;
 
-class cacheWrapper
+class cache
 {
     private int $cache_life;
     private RWFileCache $cache;

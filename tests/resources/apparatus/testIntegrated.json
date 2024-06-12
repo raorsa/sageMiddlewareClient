@@ -1,0 +1,908 @@
+[
+  {
+    "id": 2982,
+    "serial_number": "21FST00091",
+    "model": "FST1 FILTRO",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 42,
+    "brand_id": 23,
+    "location_id": 491,
+    "manufactured_at": "2021-01-05",
+    "received_at": "2022-01-01",
+    "commissioning_at": "2022-01-28",
+    "warranty_expiration_at": "2023-01-28",
+    "related": 1539,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:59.000000Z",
+    "updated_at": "2024-05-23T13:09:13.000000Z",
+    "deleted_at": null,
+    "brand": {
+      "id": 23,
+      "name": "MainTech-Dipre",
+      "interventions": 29,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-07T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 29,
+          "name": "Alimentador",
+          "interventions": 9,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-30T09:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 29,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 31,
+          "name": "Bomba de impulsión",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 31,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 38,
+          "name": "Dosificador",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-02-16T08:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 38,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 53,
+          "name": "Tolvas - Minitolvas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 53,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 54,
+          "name": "Tolvas Receptoras Alimentacion",
+          "interventions": 1,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-24T08:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 54,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 55,
+          "name": "Triturador",
+          "interventions": 6,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-30T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 55,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 56,
+          "name": "Válvula Proporcional",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-02-06T15:00:09.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 56,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 39,
+          "name": "Dosificador Gravimetrico",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-13T23:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 39,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 33,
+          "name": "Centralizada de material",
+          "interventions": 5,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-07T22:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 33,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 42,
+          "name": "Filtro",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-22T10:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 42,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 35,
+          "name": "Contenedor de depósito",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 35,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 36,
+          "name": "Deshumidificador",
+          "interventions": 3,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-05-01T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 36,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 44,
+          "name": "Mezclador",
+          "interventions": 8,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-29T18:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 44,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 51,
+          "name": "Silo / Descargadores Sacas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 51,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 52,
+          "name": "Tolva Secadora",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-14T16:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 52,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 50,
+          "name": "Separador de polvo",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 50,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3317,
+    "serial_number": "17CT000047",
+    "model": "CT10 Ø40 para ASTQ2 QUADRIO",
+    "machine_number": null,
+    "file": "",
+    "observations": null,
+    "warranty": "one",
+    "type_id": 54,
+    "brand_id": 23,
+    "location_id": 491,
+    "manufactured_at": "2016-12-31",
+    "received_at": "2016-12-31",
+    "commissioning_at": "2017-09-13",
+    "warranty_expiration_at": "2018-09-13",
+    "related": 1539,
+    "interventions_count": 0,
+    "created_at": "2024-01-14T21:49:47.000000Z",
+    "updated_at": "2024-05-23T13:09:13.000000Z",
+    "deleted_at": null,
+    "brand": {
+      "id": 23,
+      "name": "MainTech-Dipre",
+      "interventions": 29,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-07T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 29,
+          "name": "Alimentador",
+          "interventions": 9,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-30T09:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 29,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 31,
+          "name": "Bomba de impulsión",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 31,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 38,
+          "name": "Dosificador",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-02-16T08:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 38,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 53,
+          "name": "Tolvas - Minitolvas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 53,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 54,
+          "name": "Tolvas Receptoras Alimentacion",
+          "interventions": 1,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-24T08:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 54,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 55,
+          "name": "Triturador",
+          "interventions": 6,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-30T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 55,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 56,
+          "name": "Válvula Proporcional",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-02-06T15:00:09.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 56,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 39,
+          "name": "Dosificador Gravimetrico",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-13T23:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 39,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 33,
+          "name": "Centralizada de material",
+          "interventions": 5,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-07T22:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 33,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 42,
+          "name": "Filtro",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-22T10:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 42,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 35,
+          "name": "Contenedor de depósito",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 35,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 36,
+          "name": "Deshumidificador",
+          "interventions": 3,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-05-01T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 36,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 44,
+          "name": "Mezclador",
+          "interventions": 8,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-29T18:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 44,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 51,
+          "name": "Silo / Descargadores Sacas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 51,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 52,
+          "name": "Tolva Secadora",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-14T16:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 52,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 50,
+          "name": "Separador de polvo",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 50,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": 3791,
+    "serial_number": "17CT000046",
+    "model": "CT10 Ø40 FOR ASTQ2 QUADRIO",
+    "machine_number": null,
+    "file": null,
+    "observations": null,
+    "warranty": "one",
+    "type_id": 54,
+    "brand_id": 23,
+    "location_id": 491,
+    "manufactured_at": "2017-01-01",
+    "received_at": null,
+    "commissioning_at": "2017-09-13",
+    "warranty_expiration_at": "2018-09-13",
+    "related": 1539,
+    "interventions_count": 1,
+    "created_at": "2024-05-22T15:06:51.000000Z",
+    "updated_at": "2024-05-24T08:00:04.000000Z",
+    "deleted_at": null,
+    "brand": {
+      "id": 23,
+      "name": "MainTech-Dipre",
+      "interventions": 29,
+      "created_at": "2024-01-14T21:49:28.000000Z",
+      "updated_at": "2024-06-07T22:00:04.000000Z",
+      "types": [
+        {
+          "id": 29,
+          "name": "Alimentador",
+          "interventions": 9,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-30T09:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 29,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 31,
+          "name": "Bomba de impulsión",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 31,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 38,
+          "name": "Dosificador",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-02-16T08:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 38,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 53,
+          "name": "Tolvas - Minitolvas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 53,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 54,
+          "name": "Tolvas Receptoras Alimentacion",
+          "interventions": 1,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-24T08:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 54,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 55,
+          "name": "Triturador",
+          "interventions": 6,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-05-30T05:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 55,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 56,
+          "name": "Válvula Proporcional",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:29.000000Z",
+          "updated_at": "2024-02-06T15:00:09.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 56,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 39,
+          "name": "Dosificador Gravimetrico",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-13T23:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 39,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 33,
+          "name": "Centralizada de material",
+          "interventions": 5,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-06-07T22:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 33,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 42,
+          "name": "Filtro",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-22T10:00:07.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 42,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 35,
+          "name": "Contenedor de depósito",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 35,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 36,
+          "name": "Deshumidificador",
+          "interventions": 3,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-05-01T22:00:05.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 36,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 44,
+          "name": "Mezclador",
+          "interventions": 8,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-04-29T18:00:04.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 44,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 51,
+          "name": "Silo / Descargadores Sacas",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 51,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 52,
+          "name": "Tolva Secadora",
+          "interventions": 2,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-03-14T16:00:08.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 52,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        },
+        {
+          "id": 50,
+          "name": "Separador de polvo",
+          "interventions": 0,
+          "created_at": "2024-01-14T21:49:28.000000Z",
+          "updated_at": "2024-01-14T21:49:28.000000Z",
+          "pivot": {
+            "brand_id": 23,
+            "type_id": 50,
+            "model_regex": null,
+            "model_replace": null,
+            "model_mask": null,
+            "model_manual": null,
+            "model_sheet": null,
+            "model_ce": null
+          }
+        }
+      ]
+    }
+  }
+]

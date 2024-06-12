@@ -1,6 +1,6 @@
 <?php
 
-namespace Raorsa\SageMiddlewareClient;
+namespace Raorsa\SageMiddlewareClient\components;
 
 
 use RuntimeException;
@@ -9,7 +9,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 use Throwable;
 
-class Connexion
+class connexion
 {
     private const URL_LOGIN = 'login';
     private static array $instances = [];
@@ -34,7 +34,7 @@ class Connexion
         throw new RuntimeException("Cannot unserialize a singleton.");
     }
 
-    public static function getInstance(HttpClientInterface $httpClient): Connexion
+    public static function getInstance(HttpClientInterface $httpClient): connexion
     {
         $cls = static::class;
         if (!isset(self::$instances[$cls])) {
@@ -115,7 +115,7 @@ class Connexion
         $this->verify = $verify;
     }
 
-    public static function mount(string $url, string $email, string $password, bool $verify = true, string $name = 'SageClient'): Connexion
+    public static function mount(string $url, string $email, string $password, bool $verify = true, string $name = 'SageClient'): connexion
     {
         $connection = self::getInstance(HttpClient::create());
         $connection->url = $url;
@@ -127,7 +127,7 @@ class Connexion
         return $connection;
     }
 
-    public static function link(string $token): Connexion
+    public static function link(string $token): connexion
     {
         $connection = self::getInstance(HttpClient::create());
         $connection->login = $token;

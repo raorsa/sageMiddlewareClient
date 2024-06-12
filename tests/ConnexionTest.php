@@ -4,11 +4,11 @@
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversFunction;
 use PHPUnit\Framework\TestCase;
-use Raorsa\SageMiddlewareClient\Connexion;
+use Raorsa\SageMiddlewareClient\components\connexion;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
-#[CoversClass(Connexion::class)]
+#[CoversClass(connexion::class)]
 #[CoversFunction('__construct')]
 #[CoversFunction('getInstance')]
 #[CoversFunction('getUrl')]
@@ -18,7 +18,7 @@ use Symfony\Component\HttpClient\Response\MockResponse;
 #[CoversFunction('call')]
 class ConnexionTest extends TestCase
 {
-    private Connexion $connexion;
+    private connexion $connexion;
 
     public function testAutoLogin(): void
     {
@@ -28,7 +28,7 @@ class ConnexionTest extends TestCase
         ]);
 
         $this->connexion = $this
-            ->getMockBuilder(Connexion::class)
+            ->getMockBuilder(connexion::class)
             ->setConstructorArgs([$httpClient])
             ->onlyMethods([])
             ->getMock();
@@ -49,7 +49,7 @@ class ConnexionTest extends TestCase
         ]);
 
         $this->connexion = $this
-            ->getMockBuilder(Connexion::class)
+            ->getMockBuilder(connexion::class)
             ->setConstructorArgs([$httpClient])
             ->onlyMethods([])
             ->getMock();
@@ -69,7 +69,7 @@ class ConnexionTest extends TestCase
         ]);
 
         $this->connexion = $this
-            ->getMockBuilder(Connexion::class)
+            ->getMockBuilder(connexion::class)
             ->setConstructorArgs([$httpClient])
             ->onlyMethods([])
             ->getMock();

@@ -1,0 +1,992 @@
+[
+  {
+    "CodigoArticulo": "301010101614",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø45 D120 - RECORRIDO VÁLVULA REDUCIDO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101629",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø70 D300 - RECORRIDO VÁLVULA REDUCIDO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101630",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø75 D300 - RECORRIDO VÁLVULA 5mm BIMETALICA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101904",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø28 D65/TF80",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101905",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø32 D65",
+    "RAO_StockDisponible": "9.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101906",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø36 D65",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101907",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø32 D80/TF100",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101908",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø36 D80/TF100",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101909",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø40 D80",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101910",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø36 D100",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101911",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø40 D100/TF120",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101912",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø45 D100",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101913",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø40 D120",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101914",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø45 D120/TF160",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101915",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø50 D120",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101916",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø45 D140",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101917",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø50 D140",
+    "RAO_StockDisponible": "5.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101918",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø55 D140",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101919",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø50 D170/BT215",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101920",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø55 D170/TF220",
+    "RAO_StockDisponible": "8.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101921",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D170",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101923",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D210/ TF300",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101924",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø65 D210",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101925",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D250",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101926",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø65 D250/TF360",
+    "RAO_StockDisponible": "3.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101927",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø70 D250",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101928",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D300",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101929",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø70 D300/TF420",
+    "RAO_StockDisponible": "3.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101930",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø75 D300",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101931",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø70 D400",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101932",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø75 D400",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101933",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D400/TF520",
+    "RAO_StockDisponible": "3.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101935",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D550/E555",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101936",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø90 D550/E555",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101938",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G655 / TF800",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101940",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G855",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101941",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø105 E/G855 / TF1000",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101942",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø115 E/G855",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101944",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø115 G1055 - ESPECIAL BOQUILLA AUTO",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101970",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D550/E555 - CARAS INTERNA 90º",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101980",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 TF420",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101993",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D210 ALMENADA TPT52",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101994",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D400 ALMENADA TPT52 TRN",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101995",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D250 - CON TRATAMIENTO TIN",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101996",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø55 D170/TF220 ALMENADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101997",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø60 D250 - ALMENADA STELLITE",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101998",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G655 / TF800 ALMENADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301010101999",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D400 ALMENADA TPT60",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101075",
+    "DescripcionArticulo": "PUNTERA COMPLETA ESPECIAL 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR (3PC-SV) PARA TECH 17",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101900",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø100 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101901",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø100 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101910",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø110 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101911",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø110 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101920",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101921",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101924",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø24 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101928",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø28 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101929",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø28 ESTANDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101930",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø28 ESTANDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101932",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø32 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101936",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø36 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101937",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø36 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101938",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø36 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101939",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø36 ESTÁNDAR",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101940",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101941",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101942",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101943",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ESTÁNDAR",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101946",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø46 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101947",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø46 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101948",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø46 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101949",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø46 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101950",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ESTÁNDAR",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101951",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ALMENADA IT",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101952",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101953",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101955",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101956",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ESTÁNDAR",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101957",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101958",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101960",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101961",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR - RECORRIDO 3,2MM",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101962",
+    "DescripcionArticulo": "PUNTERA COMPLETA ESPECIAL 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR (3PC-SV)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101963",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101964",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 TPT60 TR+TIN",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101965",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101966",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101967",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTANDAR CROMADA M390 VALVULA + ANILLO*D*",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101968",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTÁNDAR",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101969",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101970",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTÁNDAR - RECORRIDO 3mm",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101971",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101975",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101976",
+    "DescripcionArticulo": "PUNTERA COMPLETA ESPECIAL 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR (3PC-SV)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101977",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101978",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101979",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101980",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ALMENADA MATERIAL TPT52 IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101983",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101984",
+    "DescripcionArticulo": "PUNTERA COMPLETA ESPECIAL 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR (3PC-SV)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101986",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ALMENADA IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101987",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR - RECORRIDO CORTO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101988",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101989",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101990",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101991",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR CROMADA + BOROTEK *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101992",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D*",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101993",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101994",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø100 ALMENADA IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101995",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø100 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101996",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø110 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101997",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 ESTÁNDAR",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101998",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 MATERIAL TPT52",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301011101999",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 MATERIAL TPP358",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301012101004",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'EUROTECK' SZ-800H Ø35",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301012101010",
+    "DescripcionArticulo": "PUNTERA COMPLETA EUROTECK E1600A Ø50",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301012101016",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'EUROTECK' E-2400A Ø60",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301012101017",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'EUROTECK' SZ-2500H Ø65",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101900",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø100 DH850 Válvula 72mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101901",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø100 DH850 - RECORRIDO VÁLVULA REDUCIDO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101913",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø130 i13500 - D1050 Válvula 104mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101914",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø140 D1250 Válvula 112mm ",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101916",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø160",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101932",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø32 D80 Válvula 24mm",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101935",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø35 D80 Válvula 26mm",
+    "RAO_StockDisponible": "3.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101938",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø38 T90 Válvula 28mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101942",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø42 D130 Válvula 30mm",
+    "RAO_StockDisponible": "7.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101945",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC DT/NEO-T 160 Ø45 Válvula 30mm",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101946",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC DE/NEO-E 168 Ø45",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101949",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø50 D130/NEOE 208 E840C",
+    "RAO_StockDisponible": "4.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101950",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø50 D200 Válvula 35mm",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101955",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø55 D250 Válvula 39mm ",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101960",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø60 D250 Válvula 46,5mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101961",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø60 D328",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101965",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø65 D350 Válvula 46mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101970",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø70 D400 Válvula 49mm",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101975",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø75 D450",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101976",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø75 D400 Válvula 60mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101980",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø80 DE478",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301013101985",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø85 DT400",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102032",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø32 D80 Válvula 32mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102035",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø35 D80 Válvula 35mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102038",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø38 T90 Válvula 38mm",
+    "RAO_StockDisponible": "5.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102042",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø42 D130 Válvula 42mm",
+    "RAO_StockDisponible": "2.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102046",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC DE/NEO-E 168 Ø45 Válvula 45mm",
+    "RAO_StockDisponible": "3.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102049",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø50 D130 Válvula 50mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102050",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø50 D200 Válvula 50mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102060",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø60 D250 Válvula 60mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301013102061",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø60 D328 Válvula 61mm",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "301099010002",
+    "DescripcionArticulo": "PUNTERA COMPLETA PARA HUSILLO INYECCION SANDRETTO NOVE NS 320-1780 Ø70 LD22",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "301099020003",
+    "DescripcionArticulo": "PUNTERA COMPLETA PARA HUSILLO DEU DGS 200 I5 EO Ø60",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301010101938",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G655 / TF800 - ARTÍCULO SUSTITUCIÓN",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301010101995",
+    "DescripcionArticulo": "PUNTERA COMPLETA CON TRATAMIENTO TIN Ø60 - ARTICULO SUSTITUCION",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301010101998",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G655 / TF800 ALMENADA - ARTÍCULO DE SUSTITUCIÓN",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101924",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø24 ALMENADA - NUEVAS OCASIÓN REVISADA - TESTEADA  IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101928",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø28 ALMENADA - NUEVAS OCASION REVISADAS - TESTEADA-  IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101932",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø32 ALMENADA - NUEVA DE OCASION REVISADA  IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101940",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA- IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101942",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO *D* -NUEVA DE OCASIÓN-TESTEADA",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101951",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA- IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101955",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA-  IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101963",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ALMENADA - TIPO TOYO  - ARTICULO SUSTITUCION  IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101968",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTÁNDAR -NUEVA DE OCASIÓN REVISADA - TESTEADA -",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101969",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA-  IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101977",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA-  IT",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101983",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTÁNDAR - NUEVA DE OCASION REVISADA -TESTEADA-",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101986",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA-  IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101990",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR - NUEVA DE OCASIÓN REVISADA - TESTEADA-",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101992",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO - SUSTITUCION",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101993",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ALMENADA - NUEVA DE OCASION REVISADA -TESTEADA-  IT",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "98301011101996",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø110 ESTÁNDAR - NUEVA DE OCASIÓN REVISADA - TESTEADA -",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301010101919",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø50 D170",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301010101935",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D550/E555 - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301010101970",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø80 D550/E555 - CARAS INTERNA 90º - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301010101998",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'LY' Ø95 E/G655 / TF800 ALMENADA - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101068",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101951",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ALMENADA  AVERIADA ",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101963",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ALMENADA  - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101969",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ALMENADA - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101977",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ALMENADA - AVERIADO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101983",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ESTANDAR  (AVERIADA)",
+    "RAO_StockDisponible": "1.0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101986",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø83 ALMENADA - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101993",
+    "DescripcionArticulo": "PUNTERA COMPLETA´TOYO´PARA HUSILLO Ø90 ALMENADA - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301011101999",
+    "DescripcionArticulo": "PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120,5 MATERIAL TPP358",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "99301013101970",
+    "DescripcionArticulo": "PUNTERA COMPLETA TEDERIC Ø70 - AVERIADA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTEDP-B-20-3-00",
+    "DescripcionArticulo": "EQUIPAMIENTO TEDERIC - PUNTERA COMPLETA",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-028-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø28 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-032-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø32 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-036-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø36 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-040-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø40 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref: 301011101942)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-046-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø046 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref: 3 01011101949)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-050-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø50 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref:301011101952)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-055-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø55 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-060-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø60 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref: 301011101966)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-068-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø68 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref: 301011101967)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-075-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø75 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO (Ref: 301011101979)",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-090-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø90 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  },
+  {
+    "CodigoArticulo": "OTOP6S-B-20-5-120-M",
+    "DescripcionArticulo": "EQUIPAMIENTO TOYO 6S - PUNTERA COMPLETA 'TOYO' PARA HUSILLO Ø120 ESTÁNDAR CROMADA + M390 VALVULA Y ANILLO",
+    "RAO_StockDisponible": ".0000000000"
+  }
+]

@@ -2,7 +2,9 @@
 
 namespace Raorsa\SageMiddlewareClient;
 
-class DeliveryNotes extends GenericClient
+use Raorsa\SageMiddlewareClient\components\baseClient;
+
+class DeliveryNotes extends baseClient
 {
     private const BASE = 'delivery';
 

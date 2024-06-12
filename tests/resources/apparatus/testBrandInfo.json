@@ -1,0 +1,26 @@
+{
+    "id": 17,
+    "name": "Alfa Robot",
+    "interventions": 63,
+    "created_at": "2024-01-14T21:49:28.000000Z",
+    "updated_at": "2024-06-06T22:00:04.000000Z",
+    "types": [
+        {
+            "id": 47,
+            "name": "Robot",
+            "interventions": 64,
+            "created_at": "2024-01-14T21:49:28.000000Z",
+            "updated_at": "2024-06-06T22:00:05.000000Z",
+            "pivot": {
+                "brand_id": 17,
+                "type_id": 47,
+                "model_regex": "/(T|R|P|B|C|TN)\\s?(\\d{3,4})(W)?[\\s|-]?(S)?(-S)?(3|5)?$/i",
+                "model_replace": "$1$2$3-$4$6",
+                "model_mask": "a[a]000[0][aa]0",
+                "model_manual": null,
+                "model_sheet": null,
+                "model_ce": null
+            }
+        }
+    ]
+}

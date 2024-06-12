@@ -1,29 +1,31 @@
 <?php
 
-namespace Raorsa\SageMiddlewareClient;
+namespace Raorsa\SageMiddlewareClient\components;
 
+use Raorsa\SageMiddlewareClient\wrappers\cache;
+use Raorsa\SageMiddlewareClient\wrappers\log;
 use Throwable;
 
-class GenericClient
+abstract class baseClient
 {
     private const TOKEN_LIFE_TIME = 518400; // 6 days
-    private cacheWrapper $cache;
-    private logWrapperInterface $log;
-    private Connexion $connexion;
+    private cache $cache;
+    private log $log;
+    private connexion $connexion;
 
-    protected function __construct(Connexion $connection, logWrapperInterface $logWrapper, cacheWrapper $cache)
+    protected function __construct(connexion $connection, log $logWrapper, cache $cache)
     {
         $this->connexion = $connection;
         $this->log = $logWrapper;
         $this->cache = $cache;
     }
 
-    public static function make(string $url, string $user, string $password, bool $verify = true, string $name = 'SageClient', int $cacheLife = 10, string $cacheDir = null, bool $cacheCompress = true, string $logDir = null, int $logLengthData = 100): GenericClient
+    public static function make(string $url, string $user, string $password, bool $verify = true, string $name = 'SageClient', int $cacheLife = 10, string $cacheDir = null, bool $cacheCompress = true, string $logDir = null, int $logLengthData = 100): baseClient
     {
-        return new static(Connexion::mount($url, $user, $password, $verify, $name), new logWrapper($logDir, $logLengthData), new cacheWrapper($cacheLife, $cacheDir, $cacheCompress));
+        return new static(connexion::mount($url, $user, $password, $verify, $name), new log($logDir, $logLengthData), new cache($cacheLife, $cacheDir, $cacheCompress));
     }
 
-    public static function mount(Connexion $connection, logWrapperInterface $logWrapper, cacheWrapper $cache): GenericClient
+    public static function mount(connexion $connection, log $logWrapper, cache $cache): baseClient
     {
         return new static($connection, $logWrapper, $cache);
     }
@@ -88,17 +90,17 @@ class GenericClient
 
     }
 
-    public function setCache(?cacheWrapper $cache): void
+    public function setCache(?cache $cache): void
     {
         $this->cache = $cache;
     }
 
-    public function setLog(?LogWrapperInterface $log): void
+    public function setLog(log $log): void
     {
         $this->log = $log;
     }
 
-    public function setConnexion(Connexion $connexion): void
+    public function setConnexion(connexion $connexion): void
     {
         $this->connexion = $connexion;
     }
