@@ -17,7 +17,7 @@ class log
     {
 
         if (is_null($log_dir)) {
-            $this->log_dir = (function_exists('storage_path') ? storage_path() . '/' : "") . "logs/";
+            $this->log_dir = "logs/";
         }
         $this->lengthLogData = $lengthLogData;
 
