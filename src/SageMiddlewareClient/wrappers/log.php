@@ -18,6 +18,8 @@ class log
 
         if (is_null($log_dir)) {
             $this->log_dir = "logs/";
+        } else {
+            $this->log_dir = $log_dir;
         }
         $this->lengthLogData = $lengthLogData;
 
