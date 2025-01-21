@@ -18,6 +18,11 @@ class DeliveryNotes extends baseClient
         return $this->callJson(self::BASE . '/info/' . $id, $cache);
     }
 
+    public function emptyLines(string $year, bool $cache = true): string|false
+    {
+        return $this->callJson(self::BASE . '/empty-lines/' . $year, $cache);
+    }
+
     public function download(string $id, bool $cache = true): string|false
     {
         return $this->call(self::BASE . '/download/' . $id, $cache);
@@ -26,10 +31,5 @@ class DeliveryNotes extends baseClient
     public function img(string $id, bool $cache = true): string|false
     {
         return $this->call(self::BASE . '/img/' . $id, $cache);
-    }
-
-    public function emptyLines(string $year, bool $cache = true): string|false
-    {
-        return $this->call(self::BASE . '/empty-lines/' . $year, $cache);
     }
 }
