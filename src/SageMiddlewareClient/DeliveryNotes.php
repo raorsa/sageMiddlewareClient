@@ -27,4 +27,9 @@ class DeliveryNotes extends baseClient
     {
         return $this->call(self::BASE . '/img/' . $id, $cache);
     }
+
+    public function emptyLines(string $year, bool $cache = true): string|false
+    {
+        return $this->call(self::BASE . '/empty-lines/' . $year, $cache);
+    }
 }
