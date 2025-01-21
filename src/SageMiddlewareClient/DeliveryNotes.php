@@ -18,7 +18,7 @@ class DeliveryNotes extends baseClient
         return $this->callJson(self::BASE . '/info/' . $id, $cache);
     }
 
-    public function emptyLines(string $year, bool $cache = true): string|false
+    public function emptyLines(string $year, bool $cache = true): object|false
     {
         return $this->callJson(self::BASE . '/empty-lines/' . $year, $cache);
     }
