@@ -18,6 +18,16 @@ abstract class DeliveryNotes extends baseClient
         return $this->callJson($this->basePath() . '/info/' . $id, $cache);
     }
 
+    public function lines(string $id, bool $cache = true): array|false
+    {
+        return $this->callJson($this->basePath() . '/lines/' . $id, $cache);
+    }
+
+    public function linesSN(string $sn, bool $cache = true): array|false
+    {
+        return $this->callJson($this->basePath() . '/lines-sn/' . $sn, $cache);
+    }
+
     public function emptyLines(string $year, bool $cache = true): array|false
     {
         return $this->callJson($this->basePath() . '/empty-lines/' . $year, $cache);
