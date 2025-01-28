@@ -33,6 +33,11 @@ abstract class DeliveryNotes extends baseClient
         return $this->callJson($this->basePath() . '/empty-lines/' . $year, $cache);
     }
 
+    public function find(string $query, bool $cache = true): array|false
+    {
+        return $this->callJson($this->basePath() . '/find/' . $query, $cache);
+    }
+
     public function download(string $id, bool $cache = true): string|false
     {
         return $this->call($this->basePath() . '/download/' . $id, $cache);
