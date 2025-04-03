@@ -8,7 +8,7 @@ class Incentives extends baseClient
 {
     private const BASE = 'incentives';
 
-    public function sat(string $startDate = null, string $endDate = null, bool $cache = true): array|false
+    public function sat(string $startDate = null, string $endDate = null, bool $cache = true): object|false
     {
         $call = ['sat'];
         if (!is_null($startDate)) {
