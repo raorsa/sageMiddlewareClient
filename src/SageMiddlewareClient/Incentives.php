@@ -21,4 +21,8 @@ class Incentives extends baseClient
     }
 
 
+    public function userSAT(string $user, bool $cache = true): object|false
+    {
+        return $this->callJson(self::BASE . '/sat/user/' . $user, $cache);
+    }
 }
