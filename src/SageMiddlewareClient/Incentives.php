@@ -10,7 +10,7 @@ class Incentives extends baseClient
 
     public function sat(string $startDate = null, string $endDate = null, bool $cache = true): object|false
     {
-        $call = ['sat'];
+        $call = ['sat', 'all'];
         if (!is_null($startDate)) {
             $call[] = $startDate;
         }
